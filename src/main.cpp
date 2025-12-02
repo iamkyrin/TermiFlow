@@ -12,7 +12,7 @@ void showMenu() {
     std::cout << "6. Check History\n";
     std::cout << "7. Session manager\n";
     std::cout << "8. Command handling\n";
-    std::cout << "5. Exit\n";
+    std::cout << "9. Exit\n";
 }
 
 int main() {
@@ -37,6 +37,18 @@ int main() {
                 changeTheme(); //banner.txt .Needs a seperate file or just add in some related file 
                 break;
             case 5:
+                config();
+                break;
+            case 6:
+                history();
+                break;
+            case 7:
+                sessionManager();
+                break;
+            case 8:
+                cmdHandler(); //comm
+                break;
+            case 9:
                 std::cout <<"Application terminated..\nHave a nice day!\n";
                 return 0;
             default:
