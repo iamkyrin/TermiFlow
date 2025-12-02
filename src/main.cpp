@@ -8,6 +8,10 @@ void showMenu() {
     std::cout << "2. Manage shortcuts\n";
     std::cout << "3. View running tasks\n";
     std::cout << "4. Change theme\n";
+    std::cout << "5. Config settings\n";
+    std::cout << "6. Check History\n";
+    std::cout << "7. Session manager\n";
+    std::cout << "8. Command handling\n";
     std::cout << "5. Exit\n";
 }
 
@@ -21,16 +25,16 @@ int main() {
 
         switch (choice) {
             case 1:
-                launchApp();
+                launchApp();//launch.cpp
                 break;
             case 2:
-                manageShortcuts();
+                manageShortcuts();//shortcuts.cpp
                 break;
             case 3:
-                showRunningTasks();
+                showRunningTasks(); //task_manager.cpp
                 break;
             case 4:
-                changeTheme();
+                changeTheme(); //banner.txt .Needs a seperate file or just add in some related file 
                 break;
             case 5:
                 std::cout <<"Application terminated..\nHave a nice day!\n";
