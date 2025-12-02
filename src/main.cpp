@@ -3,6 +3,11 @@
 
 
 void showMenu() {
+    std::cout<<"\n\t\_______\n";
+    std::cout<<"\n\t\\    \/\n";
+    std::cout<<"\n\t \\  \/\n";
+    std::cout<<"\n\t  \\\/\n";
+    std::cout<<"\n\t   \/\n";
     std::cout << "\n\t--- TermiFlow (beta) ---\n";
     std::cout << "1. Launch an application\n";
     std::cout << "2. Manage shortcuts\n";
@@ -20,7 +25,7 @@ int main() {
 
     while (true) {
         showMenu();
-        std::cout << "Enter your choice: ";
+        /*std::cout << "Enter your choice: ";
         std::cin >> choice;
 
         switch (choice) {
@@ -54,5 +59,7 @@ int main() {
             default:
                 std::cout << "Invalid option!\n";
         }
+    }*/
     }
+return 0;
 }
