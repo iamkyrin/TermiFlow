@@ -37,16 +37,16 @@ int main() {
                 changeTheme(); //banner.txt .Needs a seperate file or just add in some related file 
                 break;
             case 5:
-                config();
+                config(); //config_loader.cpp
                 break;
             case 6:
-                history();
+                history(); //history.cpp
                 break;
             case 7:
-                sessionManager();
+                sessionManager(); //session_manager.cpp
                 break;
             case 8:
-                cmdHandler(); //comm
+                cmdHandler(); //command_handler.cpp
                 break;
             case 9:
                 std::cout <<"Application terminated..\nHave a nice day!\n";
