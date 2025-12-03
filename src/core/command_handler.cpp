@@ -1,8 +1,8 @@
 #include <iostream>
-#include <sstream>
-#include <string>
+#include "command_handler.hpp"
 
-void handleCommand(const std::string& input) {
+
+void cmdHandler(const std::string& input) {
     std::stringstream ss(input);
     std::string command;
     ss >> command;
@@ -37,9 +37,7 @@ void handleCommand(const std::string& input) {
     else if (command == "sm") {
         sessionManager();
     }
-    else if (command == "cmdhand"){
-        cmdHandler();
-    }
+    
     else if (command == "help") {
         std::cout << "\n\t--Available commands --\n";
         std::cout << "launch <app>               : Launch an application\n";
@@ -49,7 +47,6 @@ void handleCommand(const std::string& input) {
         std::cout << "config                     : Config settings\n";
         std::cout << "histo                      : Check History\n";
         std::cout << "sm                         : Session manager\n";
-        std::cout << "cmdhand                    : Command handling\n";
         std::cout << "exit/quit                  : Exit\n";
     }
 
