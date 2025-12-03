@@ -4,7 +4,8 @@
 #define COMMAND_HANDLER_H
 
 #include <string>
+#include <sstream>
 
-void handleCommand(const std::string& input);
+void cmdHandler(const std::string& input);
 
 #endif
