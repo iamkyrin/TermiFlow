@@ -31,15 +31,15 @@ void handleCommand(const std::string& input) {
 
     else if (command == "help") {
         std::cout << "\n\t--Available commands --\n";
-        std::cout << "launch <app> : Launch an application\n";
-        std::cout << "Manage shortcuts\n";
-        std::cout << "View running tasks\n";
-        std::cout << "Change theme\n";
-        std::cout << "Config settings\n";
-        std::cout << "Check History\n";
-        std::cout << "Session manager\n";
-        std::cout << "Command handling\n";
-        std::cout << "Exit\n";
+        std::cout << "launch <app>               : Launch an application\n";
+        std::cout << "shortcut add/remove <name> : Manage shortcuts\n";
+        std::cout << "tasks                      : View running tasks\n";
+        std::cout << "theme <light/dark>         : Change theme\n";
+        std::cout << "config                     : Config settings\n";
+        std::cout << "histo                      : Check History\n";
+        std::cout << "sm                         : Session manager\n";
+        std::cout << "cmdhand                    : Command handling\n";
+        std::cout << "exit/quit                  : Exit\n";
     }
 
     else {
