@@ -2,7 +2,9 @@
 #include "command_handler.hpp"
 
 
-void cmdHandler(const std::string& input) {
+void cmdHandler() {
+    std::string input;
+    std::cout << "\n>>> ";
     std::stringstream ss(input);
     std::string command;
     ss >> command;
@@ -41,7 +43,6 @@ void cmdHandler(const std::string& input) {
         std::cout<<"Command - line terminated !\n";
         return;
     }
-    
     else if (command == "help") {
         std::cout << "\n\t--Available commands --\n";
         std::cout << "launch <app>               : Launch an application\n";
