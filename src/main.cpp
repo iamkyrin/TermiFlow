@@ -1,6 +1,6 @@
 //main.cpp: Includes all the application control flow
 #include <iostream>
-
+#include "include/command_handler.hpp"
 
 void showMenu() {
     
@@ -46,9 +46,10 @@ int main() {
             case 7:
                 sessionManager(); //session_manager.cpp
                 break;
-            case 8:
+                case 8:
                 cmdHandler(); //command_handler.cpp
                 break;
+                
             case 9:
                 std::cout <<"Application terminated..\nHave a nice day!\n";
                 return 0;
@@ -56,6 +57,12 @@ int main() {
                 std::cout << "Invalid option!\n";
         }
     }*/
+
+    switch(choice){
+        case 8: cmdHandler();
+                break;
+        default: std::cout<<"invalid\n";
+    }
     }
 return 0;
 }
