@@ -28,11 +28,22 @@ void handleCommand(const std::string& input) {
         ss >> mode;
         changeTheme(mode);
     }
-
+    else if (command == "config") {
+        config();
+    }
+    else if (command == "histo") {
+        history();
+    }
+    else if (command == "sm") {
+        sessionManager();
+    }
+    else if (command == "cmdhand"){
+        cmdHandler();
+    }
     else if (command == "help") {
         std::cout << "\n\t--Available commands --\n";
         std::cout << "launch <app>               : Launch an application\n";
-        std::cout << "shortcut add/remove <name> : Manage shortcuts\n";
+        std::cout << "shortcut <add/delete>      : Manage shortcuts\n";
         std::cout << "tasks                      : View running tasks\n";
         std::cout << "theme <light/dark>         : Change theme\n";
         std::cout << "config                     : Config settings\n";
