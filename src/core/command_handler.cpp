@@ -37,6 +37,10 @@ void cmdHandler(const std::string& input) {
     else if (command == "sm") {
         sessionManager();
     }
+    else if(command == "exit" || command == "quit"){
+        std::cout<<"Command - line terminated !\n";
+        return;
+    }
     
     else if (command == "help") {
         std::cout << "\n\t--Available commands --\n";
