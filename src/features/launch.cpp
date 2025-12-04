@@ -5,7 +5,7 @@
 void launchApp() {
     std::string command;
     std::string appName;
-    std::cout<<">>> launch ";
+    std::cout<<">>>launch "; 
     std::cin>>appName;
 
     if (appName == "chrome") {
