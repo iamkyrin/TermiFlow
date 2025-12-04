@@ -1,6 +1,7 @@
 //main.cpp: Includes all the application control flow
 #include <iostream>
-#include "command_handler.hpp"
+#include "../include/command_handler.hpp"
+#include "core/command_handler.cpp"
 
 void showMenu() {
     
@@ -21,9 +22,9 @@ int main() {
 
     while (true) {
         showMenu();
-        /*std::cout << "Enter your choice: ";
+        std::cout << "Enter your choice: ";
         std::cin >> choice;
-
+/*
         switch (choice) {
             case 1:
                 launchApp();//launch.cpp
