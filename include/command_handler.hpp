@@ -6,6 +6,6 @@
 #include <string>
 #include <sstream>
 
-void cmdHandler(const std::string& input);
+void cmdHandler();
 
 #endif
