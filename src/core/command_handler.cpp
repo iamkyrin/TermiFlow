@@ -3,13 +3,16 @@
 
 
 void cmdHandler() {
-    std::string input;
-    std::cout << "\n>>> ";
-    std::stringstream ss(input);
+    
     std::string command;
-    ss >> command;
+    while(true){
+    std::cout << "\n>>> ";
+    std::cin>>command;
+    //std::stringstream ss(input);
+    //std::string command;
+    //ss >> command;
 
-    if (command == "launch") {
+   /* if (command == "launch") {
         std::string app;
         ss >> app;
         launchApplication(app);    // pass app name
@@ -39,7 +42,7 @@ void cmdHandler() {
     else if (command == "sm") {
         sessionManager();
     }
-    else if(command == "exit" || command == "quit"){
+    else */if(command == "exit" || command == "quit"){
         std::cout<<"Command - line terminated !\n";
         return;
     }
@@ -58,4 +61,5 @@ void cmdHandler() {
     else {
         std::cout << "Unknown command. Type 'help'.\n";
     }
+}
 }
