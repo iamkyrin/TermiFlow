@@ -1,6 +1,6 @@
 //main.cpp: Includes all the application control flow
 #include <iostream>
-#include "include/command_handler.hpp"
+#include "command_handler.hpp"
 
 void showMenu() {
     
