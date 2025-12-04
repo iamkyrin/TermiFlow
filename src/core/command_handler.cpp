@@ -1,5 +1,6 @@
 #include <iostream>
 #include "../../include/command_handler.hpp"
+#include "../../include/launch.hpp"
 
 
 void cmdHandler() {
@@ -12,12 +13,11 @@ void cmdHandler() {
     //std::string command;
     //ss >> command;
 
-   /* if (command == "launch") {
-        std::string app;
-        ss >> app;
-        launchApplication(app);    // pass app name
+   if (command == "launch") {
+        
+        launchApp();    // pass app name
     }
-
+        /*
     else if (command == "shortcut") {
         std::string action;
         ss >> action;
