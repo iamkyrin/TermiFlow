@@ -2,6 +2,8 @@
 #include <iostream>
 #include "../include/command_handler.hpp"
 #include "core/command_handler.cpp"
+#include "../include/launch.hpp"
+#include "features/launch.cpp"
 
 void showMenu() {
     
@@ -60,6 +62,8 @@ int main() {
     }*/
 
     switch(choice){
+        case 1: launchApp();
+                break;
         case 8: cmdHandler();
                 break;
         default: std::cout<<"invalid\n";
