@@ -6,7 +6,6 @@
 
 //header file error check proper linking of files
 void cmdHandler() {
-    
     std::string input;
     std::string command;
     std::string app;
