@@ -1,22 +1,22 @@
 #include <iostream>
 #include <string>
+#include <sstream>
 #include "../../include/command_handler.hpp"
 #include "../../include/launch.hpp"
 
 
 void cmdHandler() {
     
-    std::string input;;
+    std::string input;
     
     
-    
-    while(true){
-        std::cout<<"Enter command line instruction : ";
-    //std::cout << "\n>>> ";
-    std::getline(std::cin,input);
-    std::stringstream ss(input);
     std::string command;
     std::string app;
+    while(true){
+        std::cout<<"Enter command line instruction : ";
+    std::getline(std::cin,input);
+    std::stringstream ss(input);
+    
     ss >> command;
     std::getline(ss, app);
    if (command == "launch") {
