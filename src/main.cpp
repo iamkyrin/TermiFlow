@@ -1,9 +1,12 @@
 //main.cpp: Includes all the application control flow
 #include <iostream>
 #include "../include/command_handler.hpp"
-#include "core/command_handler.cpp"
 #include "../include/launch.hpp"
-#include "features/launch.cpp"
+#include "../include/shortcuts.hpp"
+#include "../include/task_manager.hpp"
+#include "../include/config_loader.hpp"
+#include "../include/history.hpp"
+#include "../include/session_manager.hpp"
 
 void showMenu() {
     
