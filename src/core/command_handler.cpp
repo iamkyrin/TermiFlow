@@ -1,22 +1,25 @@
 #include <iostream>
+#include <string>
 #include "../../include/command_handler.hpp"
 #include "../../include/launch.hpp"
 
 
 void cmdHandler() {
     
-    //std::string command;
-    std::string input;
-    //std::string appname;
+    std::string input;;
+    std::string app;
+    
+    
     while(true){
-    std::cout << "\n>>> ";
-    //std::cin>>command;
+        std::cout<<"Enter command line instruction : ";
+    //std::cout << "\n>>> ";
     std::stringstream ss(input);
     std::string command;
     ss >> command;
+    ss>>app;
 
    if (command == "launch") {
-        launchApp(input);    // pass app name
+        launchApp(app);    // pass app name
     }
         /*
     else if (command == "shortcut") {
