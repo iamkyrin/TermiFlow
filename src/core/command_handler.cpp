@@ -5,17 +5,18 @@
 
 void cmdHandler() {
     
-    std::string command;
+    //std::string command;
+    std::string input;
+    //std::string appname;
     while(true){
     std::cout << "\n>>> ";
-    std::cin>>command;
-    //std::stringstream ss(input);
-    //std::string command;
-    //ss >> command;
+    //std::cin>>command;
+    std::stringstream ss(input);
+    std::string command;
+    ss >> command;
 
    if (command == "launch") {
-        
-        launchApp();    // pass app name
+        launchApp(input);    // pass app name
     }
         /*
     else if (command == "shortcut") {
