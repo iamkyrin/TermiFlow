@@ -7,17 +7,18 @@
 void cmdHandler() {
     
     std::string input;;
-    std::string app;
+    
     
     
     while(true){
         std::cout<<"Enter command line instruction : ";
     //std::cout << "\n>>> ";
+    std::getline(std::cin,input);
     std::stringstream ss(input);
     std::string command;
+    std::string app;
     ss >> command;
-    ss>>app;
-
+    std::getline(ss, app);
    if (command == "launch") {
         launchApp(app);    // pass app name
     }
@@ -64,6 +65,7 @@ void cmdHandler() {
 
     else {
         std::cout << "Unknown command. Type 'help'.\n";
+        return;
     }
 }
 }
