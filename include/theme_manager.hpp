@@ -8,5 +8,6 @@
 #include <sstream>
 
 void changeTheme(std::string theme);
+void changeTheme();
 
 #endif
