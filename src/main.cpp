@@ -31,7 +31,7 @@ int main() {
         showMenu();
         std::cout << "Enter your choice: ";
         std::cin >> choice;
-        std::getline(std::cin, buffer);
+        //std::getline(std::cin, buffer);
 /*
         switch (choice) {
             case 1:
@@ -44,7 +44,7 @@ int main() {
                 showRunningTasks(); //task_manager.cpp
                 break;
             case 4:
-                changeTheme(); //banner.txt .Needs a seperate file or just add in some related file 
+                changeTheme(); //terminal theme change
                 break;
             case 5:
                 config(); //config_loader.cpp
@@ -69,6 +69,8 @@ int main() {
 
     switch(choice){
         case 1: launchApp();
+                break;
+        case 4: changeTheme();
                 break;
         case 8: cmdHandler();
                 break;
