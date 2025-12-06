@@ -4,6 +4,7 @@
 #include "../include/launch.hpp"
 #include "../include/shortcuts.hpp"
 #include "../include/task_manager.hpp"
+#include "../include/theme_manager.hpp"
 #include "../include/config_loader.hpp"
 #include "../include/history.hpp"
 #include "../include/session_manager.hpp"
