@@ -5,47 +5,21 @@
 #include "../../include/launch.hpp"
 
 //header file error check proper linking of files
-void cmdHandler(std::string input) {
-    std::string command;
-    std::string app;
-    while(true){
+    void cmdHandler(const std::string& input) {
         std::stringstream ss(input);
-        ss >> command;
-        std::getline(ss, app);
+        std::string command, appName;
+        ss >> command >> appName;
+
         if (command == "launch") {
-            launchApp(app);    // pass app name
+            launchApp(appName); // pass app name
         }
-        /*
-        else if (command == "shortcut") {
-            std::string action;
-            ss >> action;
-            manageShortcuts(action);
-        }
-
-        else if (command == "tasks") {
-            showRunningTasks();
-        }
-
-        else if (command == "theme") {
-            std::string mode;
-            ss >> mode;
-            changeTheme(mode);
-        }
-        else if (command == "config") {
-            config();
-        }
-        else if (command == "histo") {
-            history();
-        }
-        else if (command == "sm") {
-            sessionManager();
-        }
-        else */if(command == "exit" || command == "quit"){
-            std::cout<<"Command - line terminated !\n";
+        // Add more command handling as needed
+        else if (command == "exit" || command == "quit") {
+            std::cout << "Command - line terminated !\n";
             return;
         }
         else if (command == "help") {
-            std::cout << "\n\t--Available commands --\n";
+            std::cout << "\n\t-- Available commands --\n";
             std::cout << "launch <app>               : Launch an application\n";
             std::cout << "shortcut <add/delete>      : Manage shortcuts\n";
             std::cout << "tasks                      : View running tasks\n";
@@ -60,4 +34,4 @@ void cmdHandler(std::string input) {
             return;
         }
     }
-}
+           
