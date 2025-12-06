@@ -24,12 +24,13 @@ void showMenu() {
 
 int main() {
     int choice;
-    std::string instring;
+    std::string instring,buffer;
 
     while (true) {
         showMenu();
         std::cout << "Enter your choice: ";
         std::cin >> choice;
+        std::getline(std::cin, buffer);
 /*
         switch (choice) {
             case 1:
@@ -68,12 +69,9 @@ int main() {
     switch(choice){
         case 1: launchApp();
                 break;
-        case 8:std::cout<<">>>"<<std::endl;
-                std::cin.clear();
-               std::getline(std::cin,instring);
-              cmdHandler(instring);
+        case 8: cmdHandler();
                 break;
-        default: std::cout<<"invalid\n";
+        default: std::cout<<"Invalid choice !. Try Again.\n";
     }
     }
 return 0;
