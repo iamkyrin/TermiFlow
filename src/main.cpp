@@ -31,7 +31,7 @@ int main() {
         showMenu();
         std::cout << "Enter your choice: ";
         std::cin >> choice;
-        //std::getline(std::cin, buffer);
+        std::getline(std::cin, buffer);
 /*
         switch (choice) {
             case 1:
