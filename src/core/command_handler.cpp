@@ -5,13 +5,10 @@
 #include "../../include/launch.hpp"
 
 //header file error check proper linking of files
-void cmdHandler() {
-    std::string input;
+void cmdHandler(std::string input) {
     std::string command;
     std::string app;
     while(true){
-        std::cout<<"Enter command line instruction : ";
-        std::getline(std::cin,input);
         std::stringstream ss(input);
         ss >> command;
         std::getline(ss, app);
