@@ -3,6 +3,7 @@
 #include <sstream>
 #include "../../include/command_handler.hpp"
 #include "../../include/launch.hpp"
+#include "../../include/theme_manager.hpp"
 
 //header file error check proper linking of files
     void cmdHandler() {
@@ -23,8 +24,7 @@
 
             }
             else if(command == "theme"){ //theme dark and theme light
-                    std::string color="color 70";
-                    system(color.c_str());
+                    changeTheme(parameter);
 
             }
             else if (command == "exit" || command == "quit") {
