@@ -24,6 +24,7 @@ void showMenu() {
 
 int main() {
     int choice;
+    std::string in;
 
     while (true) {
         showMenu();
@@ -67,7 +68,9 @@ int main() {
     switch(choice){
         case 1: launchApp();
                 break;
-        case 8: cmdHandler();
+        case 8:std::cout<<">>>";
+               std::getline(std::cin,in);
+              cmdHandler(in);
                 break;
         default: std::cout<<"invalid\n";
     }
