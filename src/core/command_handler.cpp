@@ -4,17 +4,19 @@
 #include "../../include/command_handler.hpp"
 #include "../../include/launch.hpp"
 #include "../../include/theme_manager.hpp"
+#include "../../include/shortcuts.hpp"
 
 //header file error check proper linking of files
     void cmdHandler() {
         std::string input;
+        shortcuts s;
         while(true){
             std::cout<<"\n>>>";
             std::cin.clear();
             std::getline(std::cin,input); //'input' string is overloaded and no 'const' keyword used, check this.
             std::stringstream ss(input);
-            std::string command, parameter;
-            ss >> command >> parameter;
+            std::string command, parameter,extra1, extra2;
+            ss >> command >> parameter >>extra1 >> extra2;
 
             if (command == "launch") {
                 launchApp(parameter); // pass app name
@@ -27,6 +29,19 @@
                     changeTheme(parameter);
 
             }
+            else if(command == "shortcut"){ //here s: object of class 'shortcuts'
+                if(parameter=="add"){
+                    s.add(extra1, extra2);
+                }
+                else if(parameter=="remove"){
+                    s.remove(extra2);
+                }
+                else if(parameter == "list"){
+                    s.list();
+                }
+                else
+                    std::cout<<"Invalid shortcut command !. Check 'help'\n";
+                }
             else if (command == "exit" || command == "quit") {
                 std::cout << "Command - line terminated !\n";
                 return;
