@@ -16,7 +16,7 @@
             std::getline(std::cin,input); //'input' string is overloaded and no 'const' keyword used, check this.
             std::stringstream ss(input);
             std::string command, parameter,extra1, extra2;
-            ss >> command >> parameter >>extra1 >> extra2;
+            ss >> command >> parameter;
             while(true){
             
                 if (command == "launch") {
@@ -32,7 +32,9 @@
 
                 }
                 else if(command == "shortcut"){
-                    void mapCheck();//here s: object of class 'shortcuts'
+                    std::stringstream kk(parameter);
+                    ss>>extra1>>extra2;
+                    //void mapCheck();//here s: object of class 'shortcuts'
                         if(parameter=="add"){
                             s.add(extra1, extra2);
                         }
@@ -66,4 +68,5 @@
             }
         }
     }
+}
            
