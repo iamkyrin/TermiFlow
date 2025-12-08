@@ -12,8 +12,8 @@ class shortcuts {
     std::string filepath;
 
     public:
-    void add(const std::string& def, const std::string& unew ); //def: default key; unew: user's new key
-    void remove(const std::string& def);
+    void add(const std::string& key, const std::string& value ); //def: default key; unew: user's new key
+    void remove(const std::string& key);
     void save();
     void list();
 
