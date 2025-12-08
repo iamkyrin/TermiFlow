@@ -9,17 +9,19 @@
 //header file error check proper linking of files
     void cmdHandler() {
         std::string input;
-        shortcuts s; //shortcuts class object declaration
+         //shortcuts class object declaration
         
             std::cout<<"\n>>>";
-            std::cin.clear();
+            //std::cin.clear();
             std::getline(std::cin,input); //'input' string is overloaded and no 'const' keyword used, check this.
             std::stringstream ss(input);
-            std::string command, parameter,extra1, extra2;
+            std::string command, parameter;
             ss >> command >> parameter;
             while(true){
             
                 if (command == "launch") {
+                    shortcuts s;
+                    std::string extra1,extra2;
                     if(s.exists(extra2)) { //check whether user created shortcut exists or not
                         parameter = s.getValue(extra2);
                     return;
