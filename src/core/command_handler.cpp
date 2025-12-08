@@ -10,24 +10,26 @@
     void cmdHandler() {
         std::string input;
          //shortcuts class object declaration
-        
+        while(true){
             std::cout<<"\n>>>";
             //std::cin.clear();
             std::getline(std::cin,input); //'input' string is overloaded and no 'const' keyword used, check this.
             std::stringstream ss(input);
             std::string command, parameter;
             ss >> command >> parameter;
-            while(true){
-            
+
+            shortcuts s;
+            std::string extra1,extra2;
+            std::stringstream kk(parameter);
+            kk>>extra1>>extra2;
+
                 if (command == "launch") {
-                    shortcuts s;
-                    std::string extra1,extra2;
-                    std::stringstream kk(parameter);
-                    kk>>extra1>>extra2;
+                    
                     if(s.exists(extra2)) { //check whether user-created shortcut exists or not
                         parameter = s.getValue(extra2);
                     
                     launchApp(parameter); // pass app name
+                }
                 }
                 // Add more command handling as needed
 
@@ -36,8 +38,9 @@
 
                 }
                 else if(command == "shortcut"){
-                    std::stringstream kk(parameter);
-                    ss>>extra1>>extra2;
+                    
+            
+            
                     //void mapCheck();//here s: object of class 'shortcuts'
                         if(parameter=="add"){
                             s.add(extra1, extra2);
@@ -72,5 +75,5 @@
             }
         }
     }
-}
+
            
