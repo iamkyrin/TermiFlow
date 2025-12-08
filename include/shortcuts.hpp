@@ -17,6 +17,6 @@ class shortcuts {
     void save();
     void list();
 
-}
+};
 
 #endif
