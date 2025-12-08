@@ -25,7 +25,7 @@ void showMenu() {
 
 int main() {
     int choice;
-    std::string instring,buffer;
+    std::string buffer;
 
     while (true) {
         showMenu(); //display menu
