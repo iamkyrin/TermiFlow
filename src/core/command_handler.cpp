@@ -22,9 +22,11 @@
                 if (command == "launch") {
                     shortcuts s;
                     std::string extra1,extra2;
-                    if(s.exists(extra2)) { //check whether user created shortcut exists or not
+                    std::stringstream kk(parameter);
+                    kk>>extra1>>extra2;
+                    if(s.exists(extra2)) { //check whether user-created shortcut exists or not
                         parameter = s.getValue(extra2);
-                    return;
+                    
                     launchApp(parameter); // pass app name
                 }
                 // Add more command handling as needed
