@@ -1,4 +1,6 @@
 //shortcuts.cpp file: for creating and managing user-defined shortcuts (for launch commands as of now)
+
+//has errrors correct them !
 #include <iostream>
 #include <fstream>
 #include "../../include/shortcuts.hpp"
@@ -16,7 +18,7 @@ void shortcuts::remove(const std::string& key){
 
 }
 void shortcuts::save(){
-    std::ofstream outfile(filepath);
+    std::ofstream outfile("shortcut_det.txt");
     for(auto& p : shortMap) { //for each loop
         outfile << p.first << "=" << p.second << "\n";
     }
@@ -30,11 +32,11 @@ void shortcuts::list(){
     }
 
 }
-bool shortcuts::exists(const std::string& value){
-    return shortMap.find(value) != shortMap.end();
+bool shortcuts::exists(const std::string& key){
+    return shortMap.find(key) != shortMap.end();
 }
-std::string shortcuts::getValue(const std::string& key){
-    auto value= shortMap.find(key);
-    return (value != shortMap.end()) ? value->second : "";
+std::string shortcuts::getValue(const std::string& value){
+    auto key= shortMap.find(value);
+    return key;  //needs clarification !!
 }
 
