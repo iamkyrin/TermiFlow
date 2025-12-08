@@ -30,4 +30,11 @@ void shortcuts::list(){
     }
 
 }
+bool shortcuts::exists(const std::string& value){
+    return shortMap.find(value) != shortMap.end();
+}
+std::string shortcuts::getValue(const std::string& key){
+    auto value= shortMap.find(key);
+    return (value != shortMap.end()) ? value->second : "";
+}
 
