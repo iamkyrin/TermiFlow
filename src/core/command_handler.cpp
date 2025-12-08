@@ -6,7 +6,7 @@
 #include "../../include/theme_manager.hpp"
 #include "../../include/shortcuts.hpp"
 
-//header file error check proper linking of files
+//launch module is having errors; shortcut module works but mapping is wrong with wrong output , has errors too !!. Rest of the modules work correctly.
     void cmdHandler() {
         std::string input;
          //shortcuts class object declaration
