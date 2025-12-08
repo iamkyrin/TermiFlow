@@ -1,3 +1,4 @@
+//theme manager (includes both interactive and command line operations.)
 #include "../../include/theme_manager.hpp"
 
 void changeTheme(std::string theme){ //for command-line based
