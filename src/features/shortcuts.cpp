@@ -9,7 +9,10 @@ void shortcuts::add(const std::string& key, const std::string& value){
     std::cout<<"Yeah !. Shortcut added: "<<key<<" -> "<<value<<"\n";
 }
 
-void shortcuts::remove(const std::string& value){
+void shortcuts::remove(const std::string& key){
+    shortMap.erase(key);
+    save();
+    std::cout<<"Shortcut for "<<key<<" removed!.\n";
 
 }
 void shortcuts::save(){
@@ -21,6 +24,10 @@ void shortcuts::save(){
 }
 
 void shortcuts::list(){
+    std::cout << "Registered shortcuts:\n";
+    for(auto& p : ap) {
+        std::cout << " - " << p.first << " -> " << p.second << "\n";
+    }
 
 }
 
