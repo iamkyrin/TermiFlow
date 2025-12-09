@@ -16,19 +16,22 @@ void cmdHandler() {
         std::cout << "\n>>>";
         std::getline(std::cin, input);//reads the entire string
         std::stringstream ss(input); // need explanation!! 
-        std::vector<std::string> tokens;
-        std::string token;
-        while (ss >> token) {
+        std::vector<std::string> tokens; //vector to store all seperate words of the input string
+        std::string token; //token: single word in the input string
+        while (ss >> token) { //needs explanation !
             tokens.push_back(token);
         }
 
-        if (tokens.empty()) continue;
+        if (tokens.empty()){
+            continue;
+        }
+
         std::string command = tokens[0];
 
         if (command == "launch") {
-            if (tokens.size() == 2) {
-                launchApp(tokens[1]);
-            } else if (tokens.size() == 3 && s.exists(tokens[2])) {
+            if (tokens.size() == 2) { //size: no of words or command parts. e.g., 'launch chrome' --> has 2 words, hence size=2.
+                launchApp(tokens[1]);//here 'chrome'=token[1]
+            } else if (tokens.size() == 3 && s.exists(tokens[2])) {//needs explanation !!
                 std::string app = s.getValue(tokens[2]);
                 launchApp(app);
             } else {
