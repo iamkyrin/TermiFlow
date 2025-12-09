@@ -31,8 +31,8 @@ void cmdHandler() {
         if (command == "launch") {
             if (tokens.size() == 2) { //size: no of words or command parts. e.g., 'launch chrome' --> has 2 words, hence size=2.
                 launchApp(tokens[1]);//here 'chrome'=token[1]
-            } else if (tokens.size() == 3 && s.exists(tokens[2])) {//needs explanation !!
-                std::string app = s.getValue(tokens[2]);
+            } else if (tokens.size() == 2 && s.exists(tokens[1])) {//needs explanation !!
+                std::string app = s.getValue(tokens[1]);
                 launchApp(app);
             } else {
                 std::cout << "Usage: launch <app> or launch <shortcut>" << std::endl;
