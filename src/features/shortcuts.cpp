@@ -22,7 +22,7 @@ void shortcuts::save(){
     for(auto& p : shortMap) { //for each loop
         outfile << p.first << "=" << p.second << "\n";
     }
-    outfile.close();
+    outfile.close(); //close file
 }
 
 void shortcuts::list(){
@@ -32,11 +32,14 @@ void shortcuts::list(){
     }
 
 }
-bool shortcuts::exists(const std::string& key){
-    return shortMap.find(key) != shortMap.end();
+bool shortcuts::exists(const std::string& value){
+    return shortMap.find(value) != shortMap.end();
 }
-std::string shortcuts::getValue(const std::string& value){
-    auto key= shortMap.find(value);
-    return key;  //needs clarification !!
+std::string shortcuts::getValue(const std::string& key){
+    std::string value;
+    if(exists(key)){
+    value= shortMap[key];
+    }
+    return value;  //returns actual default command mapped shortcut. e.g., returns 'chrome' for 'launch c'.
 }
 
