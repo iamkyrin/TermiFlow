@@ -11,10 +11,11 @@ void shortcuts::add(const std::string& key, const std::string& value){
     std::cout<<"Yeah !. Shortcut added: "<<key<<" -> "<<value<<"\n";
 }
 
-void shortcuts::remove(const std::string& value){
-    shortMap.erase(value); //erase() : erases the 'value' passed to it from the unordered map.
+void shortcuts::remove(const std::string& key){
+    shortMap.erase(key); //erase() : erases the 'value' passed to it from the unordered map.
+    std::cout<<"Shortcut for "<<key<<" removed!.\n";
     save();
-    std::cout<<"Shortcut for "<<shortMap[value]<<" removed!.\n";
+    
 
 }
 void shortcuts::save(){
@@ -31,6 +32,26 @@ void shortcuts::list(){
         std::cout<<"--"<< p.first << " -> " << p.second << "\n";
     }
 
+}
+
+void shortcuts::load() {
+    shortMap.clear();
+    std::ifstream infile("shortcut_det.txt");
+    std::string line;
+    while (std::getline(infile, line)) {
+        size_t eq = line.find('='); //needs explanation for the entire function!!
+        if (eq != std::string::npos) {
+            std::string key = line.substr(0, eq);
+            std::string value = line.substr(eq + 1);
+            shortMap[value] = key;
+        }
+    }
+    infile.close();
+}
+
+// Constructor: load shortcuts from file
+shortcuts::shortcuts() { //needs explanation !!
+    load();
 }
 bool shortcuts::exists(const std::string& value){
     if(shortMap.find(value) != shortMap.end()){
