@@ -48,10 +48,10 @@ void cmdHandler() {
         else if (command == "shortcut") {
             if (tokens.size() >= 2) {
                 std::string subcmd = tokens[1];
-                if (subcmd == "add" && tokens.size() == 4) {//e.g., shortcut(0) add(1) chrome(2) c(3), token size=4.
-                    s.add(tokens[2], tokens[3]); //'chrome' and 'c' are passed as parameters
+                if (subcmd == "add" && tokens.size() == 4) {   //e.g., shortcut(0) add(1) chrome(2) c(3), token size=4.
+                    s.add(tokens[2], tokens[3]);   //'chrome' and 'c' are passed as parameters
                 } else if (subcmd == "remove" && tokens.size() == 3) {
-                    s.remove(tokens[2]);
+                    s.remove(tokens[3]);    //remove 'c' from list of shortcuts mapped to 'chrome' 
                 } else if (subcmd == "list") {
                     s.list();
                 } else {
@@ -67,14 +67,14 @@ void cmdHandler() {
         }
         else if (command == "help") {
             std::cout << "\n\t-- Available commands --\n";
-            std::cout << "launch <app>               : Launch an application\n";
-            std::cout << "shortcut <add/delete>      : Manage shortcuts\n";
-            std::cout << "tasks                      : View running tasks\n";
-            std::cout << "theme <light/dark>         : Change theme\n";
-            std::cout << "config                     : Config settings\n";
-            std::cout << "histo                      : Check History\n";
-            std::cout << "sm                         : Session manager\n";
-            std::cout << "exit/quit                  : Exit\n";
+            std::cout << "launch <app>                    : Launch an application\n";
+            std::cout << "shortcut <add/remove/list>      : Manage shortcuts\n";
+            std::cout << "tasks                           : View running tasks\n";
+            std::cout << "theme <light/dark>              : Change theme\n";
+            std::cout << "config                          : Config settings\n";
+            std::cout << "histo                           : Check History\n";
+            std::cout << "sm                              : Session manager\n";
+            std::cout << "exit/quit                       : Exit\n";
         }
         else {
             std::cout << "Unknown command. Type 'help'.\n";
