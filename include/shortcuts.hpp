@@ -16,6 +16,8 @@ class shortcuts {
     void remove(const std::string& key);
     void save();
     void list();
+    void load();
+    shortcuts();
     bool exists(const std::string& value);
     std::string getValue(const std::string& key);
 
