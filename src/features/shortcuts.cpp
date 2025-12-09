@@ -12,9 +12,9 @@ void shortcuts::add(const std::string& key, const std::string& value){
 }
 
 void shortcuts::remove(const std::string& key){
-    shortMap.erase(key); //erase() : erases the 'key' passed to it from the unordered map.
+    shortMap.erase(key); //erase() : erases the 'value' passed to it from the unordered map.
     save();
-    std::cout<<"Shortcut for "<<key<<" removed!.\n";
+    std::cout<<"Shortcut for "<<shortMap[key]<<" removed!.\n";
 
 }
 void shortcuts::save(){
@@ -28,18 +28,21 @@ void shortcuts::save(){
 void shortcuts::list(){
     std::cout << "Registered shortcuts:\n";
     for(auto& p : shortMap) { //for each loop
-        std::cout << " - " << p.first << " -> " << p.second << "\n";
+        std::cout<<"--"<< p.first << " -> " << p.second << "\n";
     }
 
 }
 bool shortcuts::exists(const std::string& value){
-    return shortMap.find(value) != shortMap.end();
-}
-std::string shortcuts::getValue(const std::string& key){
-    std::string value;
-    if(exists(key)){
-    value= shortMap[key];
+    if(shortMap.find(value) != shortMap.end()){
+        return true;
     }
-    return value;  //returns actual default command mapped shortcut. e.g., returns 'chrome' for 'launch c'.
+    return false;
+}
+std::string shortcuts::getValue(const std::string& value){
+    std::string key;
+    if(exists(value)){
+    key= shortMap[value];
+    }
+    return key;  //returns actual default command mapped shortcut. e.g., returns 'chrome' for 'launch c'.
 }
 
