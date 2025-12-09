@@ -10,8 +10,9 @@
 //launch module is having errors; shortcut module works but mapping is wrong with wrong output , has errors too !!. Rest of the modules work correctly.
 
 void cmdHandler() {
-    std::string input;
     shortcuts s;
+    std::string input;
+    
     while (true) {
         std::cout << "\n>>>";
         std::getline(std::cin, input);//reads the entire string
