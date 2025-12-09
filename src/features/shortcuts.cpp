@@ -43,7 +43,7 @@ void shortcuts::load() {
         if (eq != std::string::npos) {
             std::string key = line.substr(0, eq);
             std::string value = line.substr(eq + 1);
-            shortMap[value] = key;
+            shortMap[key] = value;
         }
     }
     infile.close();
