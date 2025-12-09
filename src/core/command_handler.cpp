@@ -29,11 +29,11 @@ void cmdHandler() {
         std::string command = tokens[0];
 
         if (command == "launch") {
-            if (tokens.size() == 2) { //size: no of words or command parts. e.g., 'launch chrome' --> has 2 words, hence size=2.
-                launchApp(tokens[1]);//here 'chrome'=token[1]
-            } else if (tokens.size() == 2 && s.exists(tokens[1])) {//works when command is used with a shortcut e.g., 'launch c' here token[1]='c' and 's.exists()' checks whether c is present in the unordered_map or not. 
-                std::string app = s.getValue(tokens[1]);//If yes, actual mapped key to 'c' i.e., chrome gets passed to launchApp().
+            if (tokens.size() == 2 && s.exists(tokens[1])) { //checks for shortcut if used e.g., 'launch c'
+                std::string app = s.getValue(tokens[1]);
                 launchApp(app);
+            } else if (tokens.size() == 2) { //for no shortcuts, i.e., if default 'launch chrome'
+                launchApp(tokens[1]);
             } else {
                 std::cout << "Usage: launch <app> or launch <shortcut>" << std::endl;
             }
@@ -51,7 +51,7 @@ void cmdHandler() {
                 if (subcmd == "add" && tokens.size() == 4) {   //e.g., shortcut(0) add(1) chrome(2) c(3), token size=4.
                     s.add(tokens[2], tokens[3]);   //'chrome' and 'c' are passed as parameters
                 } else if (subcmd == "remove" && tokens.size() == 3) {
-                    s.remove(tokens[3]);    //remove 'c' from list of shortcuts mapped to 'chrome' 
+                    s.remove(tokens[2]);    //remove 'c' from list of shortcuts mapped to 'chrome' 
                 } else if (subcmd == "list") {
                     s.list();
                 } else {
