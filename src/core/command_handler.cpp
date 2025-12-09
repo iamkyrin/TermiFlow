@@ -35,7 +35,13 @@ void cmdHandler() {
                 std::cout << "Usage: launch <app> or launch <shortcut>" << std::endl;
             }
         }
-        
+        else if (command == "theme") {
+            if (tokens.size() >= 2) {
+                changeTheme(tokens[1]);
+            } else {
+                std::cout << "Usage: theme <light/dark>" << std::endl;
+            }
+        }
         else if (command == "shortcut") {
             if (tokens.size() >= 2) {
                 std::string subcmd = tokens[1];
