@@ -5,8 +5,8 @@
 #include <fstream>
 #include "../../include/shortcuts.hpp"
 
-void shortcuts::add(const std::string& key, const std::string& value){
-    shortMap[key]=value; //assigning value to key(the default command word)
+void shortcuts::add(const std::string& value, const std::string& key){
+    shortMap[value]=key; //assigning value to key(the default command word)
     save();
     std::cout<<"Yeah !. Shortcut added: "<<key<<" -> "<<value<<"\n";
 }
