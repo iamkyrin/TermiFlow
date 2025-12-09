@@ -11,10 +11,10 @@ void shortcuts::add(const std::string& key, const std::string& value){
     std::cout<<"Yeah !. Shortcut added: "<<key<<" -> "<<value<<"\n";
 }
 
-void shortcuts::remove(const std::string& key){
-    shortMap.erase(key); //erase() : erases the 'value' passed to it from the unordered map.
+void shortcuts::remove(const std::string& value){
+    shortMap.erase(value); //erase() : erases the 'value' passed to it from the unordered map.
     save();
-    std::cout<<"Shortcut for "<<shortMap[key]<<" removed!.\n";
+    std::cout<<"Shortcut for "<<shortMap[value]<<" removed!.\n";
 
 }
 void shortcuts::save(){
