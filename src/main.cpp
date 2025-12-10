@@ -70,6 +70,9 @@ int main() {
     switch(choice){
         case 1: launchApp();
                 break;
+        case 2: shortcutInteractive();
+                break;
+
         case 4: changeTheme();
                 break;
         case 8: cmdHandler();
