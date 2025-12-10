@@ -89,7 +89,7 @@ bool shortcuts::exists(const std::string& value){
 std::string shortcuts::getValue(const std::string& value){
     std::string key;
     if(exists(value)){
-    key= shortMap[value];
+        key= shortMap[value];
     }
     return key;  //returns actual default command mapped shortcut. e.g., returns 'chrome' for 'launch c'.
 }
