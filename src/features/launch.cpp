@@ -3,13 +3,21 @@
 #include <iostream>
 #include <windows.h>
 #include "../../include/launch.hpp"
+#include "../../include/shortcuts.hpp"
 
 void launchApp() {
+    shortcuts s;
     std::string command;
     std::string appName;
     std::cout<<">>>launch "; 
     std::cin>>appName;
-    launchApp(appName);
+    if (s.exists(appName)) { //checks for shortcut if used e.g., 'launch c'
+        std::string app = s.getValue(appName);
+        launchApp(app);
+    }
+    else {
+        launchApp(appName);
+    }
 }
 
 void launchApp(std::string appName) {
