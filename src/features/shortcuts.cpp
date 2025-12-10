@@ -30,10 +30,11 @@ void shortcuts::add(){
         default: std::cout<<"Invalid!. The app you want seems to be missing.\n";
 
     }
+}
 
+void remove(){
+    std::string appShortcut; //variable to store shortcut to be deleted
 
-
-    std::cin>>
 }
 
 void shortcuts::remove(const std::string& key){
