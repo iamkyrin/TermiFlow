@@ -22,9 +22,7 @@ void launchApp() {
 
 void launchApp(std::string appName) {
     std::string command;
-    //std::string appName;
-    //std::cout<<">>>launch "; 
-
+    
     if (appName == "chrome") {
         command = "start chrome";
     }
