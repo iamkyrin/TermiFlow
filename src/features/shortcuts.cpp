@@ -28,7 +28,6 @@ void shortcuts::add(){
         case 3: add(appShortcut,"youtube");
                 break;
         default: std::cout<<"Invalid!. The app you want seems to be missing.\n";
-
     }
 }
 
@@ -38,7 +37,6 @@ void shortcuts::remove(){
     std::cout<<"Enter shortcut to be removed: ";
     std::cin>>appShortcut;
     remove(appShortcut);
-
 }
 
 void shortcuts::remove(const std::string& key){
@@ -47,27 +45,6 @@ void shortcuts::remove(const std::string& key){
     save();
 }
 
-void shortcutInteractive(){
-    shortcuts s;
-    std::string shortcutMethod;
-    std::cout<<"\t-- Available shortcut methods --\n";
-    std::cout<<"<add>\t <remove>\t<list>\n";
-    std::cout<<"Enter method to be used: ";
-    std::cin>>shortcutMethod;
-                
-    if(shortcutMethod == "add"){
-        s.add();
-    }
-    else if(shortcutMethod == "remove"){
-        s.remove();
-    }
-    else if(shortcutMethod == "list"){
-        s.list();
-    }
-    else{
-        std::cout<<"Invalid shortcut method!.";
-    }
-}
 void shortcuts::save(){
     std::ofstream outfile("shortcut_det.txt");
     for(auto& p : shortMap) { //for each loop
@@ -81,7 +58,6 @@ void shortcuts::list(){
     for(auto& p : shortMap) { //for each loop
         std::cout<<"--"<< p.first << " -> " << p.second << "\n";
     }
-
 }
 
 void shortcuts::load() {
@@ -103,6 +79,7 @@ void shortcuts::load() {
 shortcuts::shortcuts() { //needs explanation !!
     load();
 }
+
 bool shortcuts::exists(const std::string& value){
     if(shortMap.find(value) != shortMap.end()){
         return true;
@@ -115,5 +92,27 @@ std::string shortcuts::getValue(const std::string& value){
     key= shortMap[value];
     }
     return key;  //returns actual default command mapped shortcut. e.g., returns 'chrome' for 'launch c'.
+}
+//interactive mode function which handles all shortcut functions.
+void shortcutInteractive(){
+    shortcuts s;
+    std::string shortcutMethod;
+    std::cout<<"\t-- Available shortcut methods --\n";
+    std::cout<<"<add>\t <remove>\t<list>\n";
+    std::cout<<"Enter method to be used: ";
+    std::cin>>shortcutMethod;
+                
+    if(shortcutMethod == "add"){
+        s.add();
+    }
+    else if(shortcutMethod == "remove"){
+        s.remove();
+    }
+    else if(shortcutMethod == "list"){
+        s.list();
+    }
+    else{
+        std::cout<<"Invalid shortcut method!.";
+    }
 }
 
