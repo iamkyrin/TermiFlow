@@ -67,17 +67,17 @@ int main() {
         }
     }*/
 
-    switch(choice){
-        case 1: launchApp();
-                break;
-        case 2: shortcutInteractive();
-                break;
-        case 4: changeTheme();
-                break;
-        case 8: cmdHandler();
-                break;
-        default: std::cout<<"Invalid choice !. Try Again.\n";
-    }
+        switch(choice){
+            case 1: launchApp();
+                    break;
+            case 2: shortcutInteractive();
+                    break;
+            case 4: changeTheme();
+                    break;
+            case 8: cmdHandler();
+                    break;
+            default: std::cout<<"Invalid choice !. Try Again.\n";
+        }
     }
 return 0;
 }
