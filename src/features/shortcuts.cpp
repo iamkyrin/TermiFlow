@@ -11,6 +11,21 @@ void shortcuts::add(const std::string& value, const std::string& key){
     std::cout<<"Yeah !. Shortcut added: "<<key<<" -> "<<value<<"\n";
 }
 
+void shortcuts::add(){
+    int appChoice;
+    std::cout<<"\tAvailable apps :\n";
+    std::cout<<"1: chrome\t2: notepad\t3: youtube\n";
+    std::cout<<"Select the app to create shortcut for(choose 1/2/3): ";
+    std::cin>>appChoice;
+    switch(appChoice){
+        case 1:
+    }
+
+
+
+    std::cin>>
+}
+
 void shortcuts::remove(const std::string& key){
     shortMap.erase(key); //erase() : erases the 'value' passed to it from the unordered map.
     std::cout<<"Shortcut for "<<key<<" removed!.\n";
