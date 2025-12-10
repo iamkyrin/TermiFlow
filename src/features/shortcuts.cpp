@@ -14,7 +14,7 @@ void shortcuts::add(const std::string& value, const std::string& key){
 void shortcuts::add(){
     int appChoice;
     std::string appShortcut;
-    std::cout<<"\tAvailable apps :\n";
+    std::cout<<"\t-- Available apps --\n";
     std::cout<<"1: chrome\t2: notepad\t3: youtube\n";
     std::cout<<"Select the app to create shortcut for(choose 1/2/3): ";
     std::cin>>appChoice;
@@ -32,8 +32,12 @@ void shortcuts::add(){
     }
 }
 
-void remove(){
+void shortcuts::remove(){
     std::string appShortcut; //variable to store shortcut to be deleted
+    list();
+    std::cout<<"Enter shortcut to be removed: ";
+    std::cin>>appShortcut;
+    remove(appShortcut);
 
 }
 
@@ -41,8 +45,28 @@ void shortcuts::remove(const std::string& key){
     shortMap.erase(key); //erase() : erases the 'value' passed to it from the unordered map.
     std::cout<<"Shortcut for "<<key<<" removed!.\n";
     save();
-    
+}
 
+void shortcutInteractive(){
+    shortcuts s;
+    std::string shortcutMethod;
+    std::cout<<"\t-- Available shortcut methods --\n";
+    std::cout<<"<add>\t <remove>\t<list>\n";
+    std::cout<<"Enter method to be used: ";
+    std::cin>>shortcutMethod;
+                
+    if(shortcutMethod == "add"){
+        s.add();
+    }
+    else if(shortcutMethod == "remove"){
+        s.remove();
+    }
+    else if(shortcutMethod == "list"){
+        s.list();
+    }
+    else{
+        std::cout<<"Invalid shortcut method!.";
+    }
 }
 void shortcuts::save(){
     std::ofstream outfile("shortcut_det.txt");
