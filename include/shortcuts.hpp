@@ -12,7 +12,7 @@ class shortcuts {
     std::string filepath;
 
     public:
-    void add(const std::string& key, const std::string& value ); //def: default key; unew: user's new key
+    void add(const std::string& key, const std::string& value ); //key: default app_name; value: user's new shortcut
     void remove(const std::string& key);
     void save();
     void list();
