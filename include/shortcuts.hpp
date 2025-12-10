@@ -21,7 +21,13 @@ class shortcuts {
     bool exists(const std::string& value);
     std::string getValue(const std::string& key);
 
+    void add();
+    void remove();
+    
+
 
 };
+
+void shortcutInteractive();
 
 #endif
