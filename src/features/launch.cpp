@@ -34,6 +34,9 @@ void launchApp(std::string appName) {
     else if (appName == "notepad") {
         command = "notepad";
     }
+    else if(appName == "youtube"){
+        command = "start https://www.youtube.com";
+    }
     else {
         std::cout << "Unknown app: " << appName << "\n";
         return;
