@@ -21,13 +21,13 @@ class shortcuts {
     bool exists(const std::string& value);
     std::string getValue(const std::string& key);
 
-    void add();
+    void add(); //here add() and remove() --> used for interactive/ menu mode.
     void remove();
     
 
 
 };
 
-void shortcutInteractive();
+void shortcutInteractive(); //for interactive/ menu mode shortcuts operation.
 
 #endif
