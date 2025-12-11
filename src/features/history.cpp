@@ -27,6 +27,9 @@ void history::save() {
     outfile.close();
 }
 
+history::history(){
+    load();
+}
 void history::add(const std::string& cmd) {
     cmdEntries.push_back(cmd);
     save();
