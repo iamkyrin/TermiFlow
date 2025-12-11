@@ -16,3 +16,4 @@ private:
     std::string filePath;
     std::vector<std::string> cmdEntries;
 };
+history h;
