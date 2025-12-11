@@ -18,7 +18,7 @@ void cmdHandler() {
     while (true) {
         std::cout << "\n>>>";
         std::getline(std::cin, input);//reads the entire string
-        h.add(input);
+        h.add(input); //history addition
         std::stringstream ss(input); // need explanation!! 
         std::vector<std::string> tokens; //vector to store all seperate words of the input string
         std::string token; //token: single word in the input string
