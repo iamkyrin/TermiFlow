@@ -37,12 +37,15 @@ void history::add(const std::string& cmd) {
 
 void history::list(){
     int indexNo = 1;
-    std::cout<<"\t--- --- --- --- --- \n";
+    std::cout<<"\t--- + --- + --- + --- + --- \n";
     for(auto& e : cmdEntries) { //for each loop
-        if(indexNo<=cmdEntries.size()){
+        //if(indexNo<=){
             std::cout << indexNo++ << ". " << e << "\n";
-        }
-        std::cout<<"[Latest]" << indexNo <<". " << e << "\n";
+        //}
+        //else{
+        //std::cout<<"[Latest]" << indexNo <<". " << e << "\n";
+        //break;
+        //}
     }
 }
 
