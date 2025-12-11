@@ -4,8 +4,6 @@
 #include <iostream>
 #include "../../include/history.hpp"
 
-
-
 void history::load() {
     cmdEntries.clear();
     std::ifstream infile(filePath);
@@ -19,3 +17,4 @@ void history::load() {
     }
     infile.close();
 }
+
