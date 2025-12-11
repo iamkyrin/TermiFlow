@@ -39,7 +39,10 @@ void history::list(){
     int indexNo = 1;
     std::cout<<"\t--- --- --- --- --- \n";
     for(auto& e : cmdEntries) { //for each loop
-        std::cout << indexNo++ << ". " << e << "\n";
+        if(indexNo<=cmdEntries.size()){
+            std::cout << indexNo++ << ". " << e << "\n";
+        }
+        std::cout<<"[Latest]" << indexNo <<". " << e << "\n";
     }
 }
 
