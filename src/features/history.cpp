@@ -36,9 +36,10 @@ void history::add(const std::string& cmd) {
 }
 
 void history::list(){
-    int idx = 1;
+    int indexNo = 1;
+    std::cout<<"\t--- --- --- --- --- \n";
     for(auto& e : cmdEntries) { //for each loop
-        std::cout << idx++ << ". " << e << "\n";
+        std::cout << indexNo++ << ". " << e << "\n";
     }
 }
 
