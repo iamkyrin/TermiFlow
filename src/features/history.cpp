@@ -20,7 +20,7 @@ void history::load() {
 
 void history::save() {
     std::ofstream outfile(filePath);
-    for(auto& e : cmdEntries) {
+    for(auto& e : cmdEntries) { //for each loop
         outfile << e << "\n";
     }
     outfile.close();
@@ -33,7 +33,7 @@ void history::add(const std::string& cmd) {
 
 void history::list(){
     int idx = 1;
-    for(auto& e : cmdEntries) {
+    for(auto& e : cmdEntries) { //for each loop
         std::cout << idx++ << ". " << e << "\n";
     }
 }
