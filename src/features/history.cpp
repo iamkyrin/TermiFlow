@@ -4,6 +4,7 @@
 #include <iostream>
 #include "../../include/history.hpp"
 
+//go through and understand all of these functions and what they do. write comments once its clear to follow through.
 void history::load() {
     cmdEntries.clear();
     std::ifstream infile(filePath);
@@ -36,4 +37,11 @@ void history::list(){
     for(auto& e : cmdEntries) { //for each loop
         std::cout << idx++ << ". " << e << "\n";
     }
+}
+
+std::string history::get(int index){
+    if(index < 1 || index > (int)cmdEntries.size()){
+        return "";
+    }
+    return cmdEntries[index - 1];
 }
