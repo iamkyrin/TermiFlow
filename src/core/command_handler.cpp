@@ -6,16 +6,19 @@
 #include "../../include/launch.hpp"
 #include "../../include/theme_manager.hpp"
 #include "../../include/shortcuts.hpp"
+#include "../../include/history.hpp"
 
 //launch module is having errors; shortcut module works but mapping is wrong with wrong output , has errors too !!. Rest of the modules work correctly.
 
 void cmdHandler() {
     shortcuts s;
+    history h;
     std::string input;
     
     while (true) {
         std::cout << "\n>>>";
         std::getline(std::cin, input);//reads the entire string
+        h.add(input);
         std::stringstream ss(input); // need explanation!! 
         std::vector<std::string> tokens; //vector to store all seperate words of the input string
         std::string token; //token: single word in the input string
