@@ -65,6 +65,9 @@ void cmdHandler() {
                 std::cout << "Usage: shortcut <add/remove/list> ..." << std::endl;
             }
         }
+        else if(command == "histo"){
+            h.list();
+        }
         else if (command == "exit" || command == "quit") {
             std::cout << "Command - line terminated !\n";
             return;
