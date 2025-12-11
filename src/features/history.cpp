@@ -25,3 +25,9 @@ void history::save() {
     }
     outfile.close();
 }
+
+void history::add(const std::string& cmd) {
+    cmdEntries.push_back(cmd);
+    save();
+}
+
