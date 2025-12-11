@@ -18,3 +18,10 @@ void history::load() {
     infile.close();
 }
 
+void history::save() {
+    std::ofstream outfile(filePath);
+    for(auto& e : cmdEntries) {
+        outfile << e << "\n";
+    }
+    outfile.close();
+}
