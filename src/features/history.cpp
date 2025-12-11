@@ -31,3 +31,9 @@ void history::add(const std::string& cmd) {
     save();
 }
 
+void history::list(){
+    int idx = 1;
+    for(auto& e : cmdEntries) {
+        std::cout << idx++ << ". " << e << "\n";
+    }
+}
