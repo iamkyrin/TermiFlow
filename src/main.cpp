@@ -73,6 +73,7 @@ int main() {
             case 2: shortcutInteractive();
                     break;
             case 4: changeTheme();
+            
                     break;
             case 8: cmdHandler();
                     break;
