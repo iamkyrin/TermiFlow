@@ -13,6 +13,7 @@ public:
     void add(const std::string& cmd); //add command to history
     void list(); //list the past commands
     std::string get(int index);
+    void historyClear();
 
 private:
     std::string filePath;
