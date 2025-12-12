@@ -57,6 +57,9 @@ std::string history::get(int index){
     return cmdEntries[index - 1];
 }
 
+void historyClear(){
+    
+}
 void historyInteractive(){
     history h;
     std::string historyMethod;
@@ -73,6 +76,9 @@ void historyInteractive(){
         std::cout<<"Enter index no of the command you want: ";
         std::cin>>cmdIndex;
         h.get(cmdIndex);
+    }
+    else if(historyMethod == "clear"){
+       
     }
     else{
         std::cout<<"Invalid history method!.\n";
