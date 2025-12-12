@@ -16,9 +16,9 @@ public:
 
 private:
     std::string filePath;
-    std::vector<std::string> cmdEntries;
+    std::vector<std::string> cmdEntries; //vector to store commands or instructions typed in the command-line interface(menu choice: 8)
 };
 
-void historyInteractive();
+void historyInteractive(); //for interactive/ menu mode history display operation.
 
 #endif
