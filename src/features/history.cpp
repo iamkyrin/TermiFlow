@@ -51,6 +51,7 @@ void history::list(){
 
 std::string history::get(int index){
     if(index < 1 || index > (int)cmdEntries.size()){
+        std::cout<<"Oops !. Command not found.\n";
         return "";
     }
     return cmdEntries[index - 1];
@@ -59,6 +60,7 @@ std::string history::get(int index){
 void historyInteractive(){
     history h;
     std::string historyMethod;
+    int cmdIndex;
     std::cout<<"\t-- Available history methods --\n";
     std::cout<<"<list>\t <goto>\n";
     std::cout<<"Enter method to be used: ";
@@ -66,5 +68,13 @@ void historyInteractive(){
 
     if(historyMethod == "list"){
         h.list();
+    }
+    else if(historyMethod == "goto"){
+        std::cout<<"Enter index no of the command you want: ";
+        std::cin>>cmdIndex;
+        h.get(cmdIndex);
+    }
+    else{
+        std::cout<<""
     }
 }
