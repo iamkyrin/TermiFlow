@@ -57,11 +57,13 @@ std::string history::get(int index){
     return cmdEntries[index - 1];
 }
 
-void historyClear(){
-    
+void history::historyClear(){
+    cmdEntries.clear();
+    std::cout<<"History cleared!. Type some commands to fill the cmd history.\n";
 }
 void historyInteractive(){
     history h;
+    char ch;
     std::string historyMethod;
     int cmdIndex;
     std::cout<<"\t-- Available history methods --\n";
@@ -78,7 +80,18 @@ void historyInteractive(){
         h.get(cmdIndex);
     }
     else if(historyMethod == "clear"){
-       
+       std::cout<<"Danger: All cmd history will be wiped out!. Press enter to continue, backspace to exit cleaning operation. ";
+       std::cin>>ch;
+       if(ch == '\r'){
+            h.historyClear();
+        }
+       else if(ch == '\b'){
+            std::cout<<"History cleaning process terminated.\n";
+            return;
+        }
+        else{
+            std::cout<<"Error!. The application is confused with your intentions. Try again.\n";
+        }
     }
     else{
         std::cout<<"Invalid history method!.\n";
