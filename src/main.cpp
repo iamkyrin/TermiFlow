@@ -74,6 +74,7 @@ int main() {
                     break;
             case 4: changeTheme();
             
+            case 6: historyInteractive();
                     break;
             case 8: cmdHandler();
                     break;
