@@ -1,4 +1,6 @@
 //header file for history.cpp
+#ifndef HISTORY
+#define HISTORY
 
 #include <string>
 #include <vector>
@@ -17,3 +19,6 @@ private:
     std::vector<std::string> cmdEntries;
 };
 
+void historyInteractive();
+
+#endif
