@@ -80,12 +80,12 @@ void historyInteractive(){
         h.get(cmdIndex);
     }
     else if(historyMethod == "clear"){
-       std::cout<<"Danger: All cmd history will be wiped out!. Press enter to continue, backspace to exit cleaning operation.";
+       std::cout<<"Danger: All cmd history will be wiped out!. Press 'y' to continue, 'n' to exit cleaning operation.";
        std::cin>>ch;
-       if(ch == '\r' || ch == '\n' || ch == '\t'){
+       if(ch == 'y' || ch == 'Y'){
             h.historyClear();
         }
-       else if(ch == '\b'){
+       else if(ch == 'n' || ch == 'N'){
             std::cout<<"History cleaning process terminated.\n";
             return;
         }
