@@ -59,6 +59,7 @@ std::string history::get(int index){
 
 void history::historyClear(){
     cmdEntries.clear();
+    save();
     std::cout<<"History cleared!. Type some new commands to fill the cmd history.\n";
 }
 void historyInteractive(){
