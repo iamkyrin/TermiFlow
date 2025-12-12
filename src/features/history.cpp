@@ -37,7 +37,7 @@ void history::add(const std::string& cmd) {
 
 void history::list(){
     int indexNo = 1;
-    std::cout<<"\t--- + --- + --- + --- + --- \n";
+    std::cout<<"\t--- + --- cmd history --- + --- \n";
     for(auto& e : cmdEntries) { //for each loop
         //if(indexNo<=){
             std::cout << indexNo++ << ". " << e << "\n";
@@ -54,4 +54,17 @@ std::string history::get(int index){
         return "";
     }
     return cmdEntries[index - 1];
+}
+
+void historyInteractive(){
+    history h;
+    std::string historyMethod;
+    std::cout<<"\t-- Available history methods --\n";
+    std::cout<<"<list>\t <goto>\n";
+    std::cout<<"Enter method to be used: ";
+    std::cin>>historyMethod;
+
+    if(historyMethod == "list"){
+        h.list();
+    }
 }
