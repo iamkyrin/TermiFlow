@@ -75,6 +75,6 @@ void historyInteractive(){
         h.get(cmdIndex);
     }
     else{
-        std::cout<<""
+        std::cout<<"Invalid history method!.\n";
     }
 }
