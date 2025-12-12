@@ -65,8 +65,21 @@ void cmdHandler() {
                 std::cout << "Usage: shortcut <add/remove/list> ..." << std::endl;
             }
         }
-        else if(command == "histo"){
-            h.list();
+        else if(command == "history"){
+            if (tokens.size() == 2 && tokens[1] == "clear") {
+                h.historyClear();
+                
+            } 
+            else if(tokens.size()==2 && tokens[1] == "list") {
+                h.list();
+            }
+            else if(tokens.size() == 2 && tokens[1] == "goto"){ //yet to create !
+                //create goto method
+            }
+            else {
+                std::cout<<"Invalid history method!. Try again.";
+            }
+
         }
         else if (command == "exit" || command == "quit") {
             std::cout << "Command - line terminated !\n";
