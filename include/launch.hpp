@@ -1,4 +1,4 @@
-//launch application module header file
+//launch.cpp header file
 #ifndef LAUNCHER_H
 #define LAUNCHER_H
 
