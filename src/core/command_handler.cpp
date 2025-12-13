@@ -79,7 +79,7 @@ void cmdHandler() {
                     int index = std::stoi(tokens[2]); //convertion of string to integer.
                     std::string cmd = h.get(index); //return command e.g., 'launch chrome'
                     if (!cmd.empty()) {
-                        std::cout << "Command at " << index << ": " << cmd << "\n";
+                        std::cout << "Command at index" << index << ": " << cmd << "\n";
                         // Optionally, execute the command:
                         // processCommand(cmd);
                         } else {
