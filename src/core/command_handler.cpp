@@ -76,12 +76,14 @@ void cmdHandler() {
             }
             else if(tokens.size() == 3 && tokens[1] == "goto"){ 
                 int id=std::stoi(std::string(1, token[2])); //
-                h.get(id);
+                std::string cmd= h.get(id);
+                std::cout<<cmd<<"\n";
+
+                // work on this, make a new fuction cmdHandler(std::string); for the goto command which executes the command.
             }
             else {
                 std::cout<<"Invalid history method!. Try again.";
             }
-
         }
         else if (command == "exit" || command == "quit") {
             std::cout << "Command - line terminated !\n";
