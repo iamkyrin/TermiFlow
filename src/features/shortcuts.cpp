@@ -1,6 +1,4 @@
 //shortcuts.cpp file: for creating and managing user-defined shortcuts (for launch commands as of now)
-
-//has errrors correct them !
 #include <iostream>
 #include <fstream>
 #include "../../include/shortcuts.hpp"
