@@ -64,7 +64,7 @@ void historyInteractive(){
     std::string historyMethod;
     int cmdIndex;
     std::cout<<"\t-- Available history methods --\n";
-    std::cout<<"<list>\t <goto>\n";
+    std::cout<<"<list>\t <goto>\t <clear>\n";
     std::cout<<"Enter method to be used: ";
     std::cin>>historyMethod;
 
@@ -86,7 +86,6 @@ void historyInteractive(){
         } catch (const std::exception& e) { //exception handling
                 std::cout << "Invalid index.\n";
             }
-        
     }
     else if(historyMethod == "clear"){
        std::cout<<"Danger: All cmd history will be wiped out!. Press 'y' to continue, 'n' to exit cleaning operation.";
