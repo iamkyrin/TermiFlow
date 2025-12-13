@@ -74,8 +74,9 @@ void cmdHandler() {
             else if(tokens.size()==2 && tokens[1] == "list") {
                 h.list();
             }
-            else if(tokens.size() == 2 && tokens[1] == "goto"){ //yet to create !
-                //create goto method
+            else if(tokens.size() == 3 && tokens[1] == "goto"){ 
+                int id=std::stoi(std::string(1, token[2])); //
+                h.get(id);
             }
             else {
                 std::cout<<"Invalid history method!. Try again.";
