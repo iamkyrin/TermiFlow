@@ -74,7 +74,19 @@ void historyInteractive(){
     else if(historyMethod == "goto"){ //yet to implement
         std::cout<<"Enter index no of the command you want: ";
         std::cin>>cmdIndex;
-        h.get(cmdIndex);
+        try {//try catch block for exceptions and error handling.
+            std::string cmd = h.get(cmdIndex); //return command e.g., 'launch chrome'
+            if (!cmd.empty()) {
+                std::cout << "Command at index" << cmdIndex << ": " << cmd << "\n";
+                // Optionally, execute the command:
+                // processCommand(cmd);
+            } else {
+                std::cout << "No command at that index.\n";
+            }
+        } catch (const std::exception& e) { //exception handling
+                std::cout << "Invalid index.\n";
+            }
+        
     }
     else if(historyMethod == "clear"){
        std::cout<<"Danger: All cmd history will be wiped out!. Press 'y' to continue, 'n' to exit cleaning operation.";
@@ -94,3 +106,4 @@ void historyInteractive(){
         std::cout<<"Invalid history method!.\n";
     }
 }
+    
