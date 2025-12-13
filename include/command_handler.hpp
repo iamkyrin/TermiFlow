@@ -1,4 +1,4 @@
-//commandHandler.cpp file header
+//commandHandler.cpp header file.
 
 #ifndef COMMAND_HANDLER_H
 #define COMMAND_HANDLER_H
