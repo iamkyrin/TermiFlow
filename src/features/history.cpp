@@ -1,4 +1,4 @@
-//history.cpp: handles operation of saving command_handler command history
+//history.cpp: handle operations of saving command_handler command history.
 #include <string>
 #include <fstream>
 #include <iostream>
