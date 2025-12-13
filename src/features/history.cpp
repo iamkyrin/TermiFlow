@@ -31,7 +31,7 @@ history::history(){
     load();
 }
 void history::add(const std::string& cmd) {
-    cmdEntries.push_back(cmd);
+    cmdEntries.push_back(cmd); //push cmd(command entered) to vector cmdEntries
     save();
 }
 
@@ -52,12 +52,14 @@ std::string history::get(int index){
 }
 
 void history::historyClear(){
-    cmdEntries.clear();
+    cmdEntries.clear(); //to clear contents of vector cmdEntries.
     save();
     std::cout<<"History cleared!. Type some new commands to fill the cmd history.\n";
 }
-void historyInteractive(){
-    history h;
+
+//interactive mode history operations handler function
+void historyInteractive(){ 
+    history h; //'h' : object of class 'history'
     char ch;
     std::string historyMethod;
     int cmdIndex;
@@ -69,7 +71,7 @@ void historyInteractive(){
     if(historyMethod == "list"){
         h.list();
     }
-    else if(historyMethod == "goto"){
+    else if(historyMethod == "goto"){ //yet to implement
         std::cout<<"Enter index no of the command you want: ";
         std::cin>>cmdIndex;
         h.get(cmdIndex);
