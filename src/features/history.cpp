@@ -11,7 +11,7 @@ void history::load() {
     if(!infile.is_open()){
         return;
     }
-
+    
     std::string line;
     while(std::getline(infile, line)) {
         cmdEntries.push_back(line);
