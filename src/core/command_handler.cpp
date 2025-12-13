@@ -1,3 +1,4 @@
+//command_handler.cpp: handles command-line interface.
 #include <iostream>
 #include <string>
 #include <sstream>
