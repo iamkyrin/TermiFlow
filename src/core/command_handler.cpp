@@ -75,10 +75,19 @@ void cmdHandler() {
                 h.list();
             }
             else if(tokens.size() == 3 && tokens[1] == "goto"){ 
-                int id=std::stoi(std::string(1, token[2])); //
-                std::string cmd= h.get(id);
-                std::cout<<cmd<<"\n";
-
+               try {//try catch block for exceptions and error handling.
+                    int index = std::stoi(tokens[2]); //convertion of string to integer.
+                    std::string cmd = h.get(index); //return command e.g., 'launch chrome'
+                    if (!cmd.empty()) {
+                        std::cout << "Command at " << index << ": " << cmd << "\n";
+                        // Optionally, execute the command:
+                        // processCommand(cmd);
+                        } else {
+                        std::cout << "No command at that index.\n";
+                        }
+            } catch (const std::exception& e) { //exception handling
+                std::cout << "Invalid index.\n";
+            }
                 // work on this, make a new fuction cmdHandler(std::string); for the goto command which executes the command.
             }
             else {
