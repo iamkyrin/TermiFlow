@@ -39,13 +39,7 @@ void history::list(){
     int indexNo = 1;
     std::cout<<"\t--- + --- cmd history --- + --- \n";
     for(auto& e : cmdEntries) { //for each loop
-        //if(indexNo<=){
-            std::cout << indexNo++ << ". " << e << "\n";
-        //}
-        //else{
-        //std::cout<<"[Latest]" << indexNo <<". " << e << "\n";
-        //break;
-        //}
+        std::cout << indexNo++ << ". " << e << "\n"; //feature: add latest command indicating label.
     }
 }
 
