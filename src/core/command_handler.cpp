@@ -10,7 +10,6 @@
 #include "../../include/history.hpp"
 
 //launch module is having errors; shortcut module works but mapping is wrong with wrong output , has errors too !!. Rest of the modules work correctly.
-
 void cmdHandler() {
     shortcuts s;
     history h;
@@ -30,7 +29,6 @@ void cmdHandler() {
         if (tokens.empty()){
             continue;
         }
-
         std::string command = tokens[0];
 
         if (command == "launch") {
@@ -68,8 +66,7 @@ void cmdHandler() {
         }
         else if(command == "history"){
             if (tokens.size() == 2 && tokens[1] == "clear") {
-                h.historyClear();
-                
+                h.historyClear();//for clearing the vector cmdEntries.
             } 
             else if(tokens.size()==2 && tokens[1] == "list") {
                 h.list();
