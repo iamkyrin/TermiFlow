@@ -1,7 +1,7 @@
 //commandHandler.cpp header file.
 
-#ifndef COMMAND_HANDLER_H
-#define COMMAND_HANDLER_H
+#ifndef COMMAND_HANDLER
+#define COMMAND_HANDLER
 
 #include <string>
 #include <sstream>
