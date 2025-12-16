@@ -6,7 +6,7 @@
 
 class SystemStats {
 public:
-    static std::string getCPUUsage();
+    static std::string getCPU_Usage();
     static std::string getMemoryUsage();
     static std::string getUptime();
 };
