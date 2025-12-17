@@ -10,7 +10,11 @@ A robust terminal application made from pure cpp which works as your command-lin
 
 ## Tech stack
 
+## Future upgrades
+
+
 ## Readme Add-ons
+
 
 
 
