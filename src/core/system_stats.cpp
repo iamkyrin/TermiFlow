@@ -7,3 +7,4 @@ std::string SystemStats::getCPU_Usage() {
     // Placeholder for now
     return "CPU: calculating...";
 }
+//Add memory usage function, uptime finctiom and complete the cpu usage function.
