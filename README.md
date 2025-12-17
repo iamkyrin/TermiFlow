@@ -1,11 +1,12 @@
 # Termi flow(beta)
 
-A robust terminal application made from pure cpp which works as your command-line assistant. Pretty much a handy tool for boring cli stuff automation and time saving.
+A robust terminal application made from pure cpp which works as your command-line catalyst. Pretty much a handy tool for boring cli stuff automation and time saving.
 
-## Features⚙️⚙️
+## Features
 
-## Tech stack🪛
+## Tech stack
 
-## Readme Add-ons ➕️
+## Readme Add-ons
+
 
 
