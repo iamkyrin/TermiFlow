@@ -2,6 +2,7 @@
 #include "../../include/system_stats.hpp"
 #include <windows.h>
 #include <sstream>
+#include <iostream>
 
 std::string SystemStats::getCPU_Usage() {
     // Placeholder for now (fix this after beta release)
@@ -31,4 +32,10 @@ std::string SystemStats::getUptime() {
     std::ostringstream outputString;
     outputString << "Uptime: " << hours << "h " << (minutes / 60.0) << "m";
     return outputString.str();
+}
+
+void statsInteractive(){
+    std::cout<<"Stats loading...\n";
+    
+
 }
