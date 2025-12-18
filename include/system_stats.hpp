@@ -11,4 +11,6 @@ public:
     static std::string getUptime();
 };
 
+void statsInteractive();
 #endif
+
