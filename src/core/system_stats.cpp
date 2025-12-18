@@ -36,6 +36,8 @@ std::string SystemStats::getUptime() {
 
 void statsInteractive(){
     std::cout<<"Stats loading...\n";
-    
+    SystemStats::getCPU_Usage();
+    SystemStats::getMemoryUsage();
+    SystemStats::getUptime();
 
 }
