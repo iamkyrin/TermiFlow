@@ -7,7 +7,7 @@ std::string SystemStats::getCPU_Usage() {
     // Placeholder for now (fix this after beta release)
     return "CPU: calculating...";
 }
-//Add memory usage function, uptime finctiom and complete the cpu usage function.
+//
 
 std::string SystemStats::getMemoryUsage() { //contains builtin and system level functions and keywords
     MEMORYSTATUSEX memInfo;
@@ -20,4 +20,15 @@ std::string SystemStats::getMemoryUsage() { //contains builtin and system level 
     std::ostringstream out; //to return the whole coutput string as a return string
     out << "Memory: " << used << " / " << total << " MB\n"<<(used/total)*100.0<<"%"; //this is a string which is actually output
     return out.str();//returns the output string mentioned above
+}
+ //function for getting and calcuating uptime in seconds, minutes and hours.
+std::string SystemStats::getUptime() {
+    DWORD uptimeMs = GetTickCount();
+    int seconds = uptimeMs / 1000.0;
+    int minutes = seconds / 60.0;
+    int hours = minutes / 60.0;
+
+    std::ostringstream outputString;
+    outputString << "Uptime: " << hours << "h " << (minutes / 60.0) << "m";
+    return outputString.str();
 }
