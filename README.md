@@ -2,11 +2,11 @@
 
 A robust terminal application made from pure cpp which works as your command-line catalyst. Pretty much a handy tool for boring cli stuff automation and time saving.
 
-## Features
+## Main Features
 * User-friendly interface
 * Robust build
-* Modular file opetation
-* 
+* Modular file operation
+* Useful functions and options
 
 ## Tech stack
 
