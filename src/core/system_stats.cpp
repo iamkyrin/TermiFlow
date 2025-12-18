@@ -17,7 +17,7 @@ std::string SystemStats::getMemoryUsage() { //contains builtin and system level 
     long long total = memInfo.ullTotalPhys / (1024 * 1024);
     long long used  = (memInfo.ullTotalPhys - memInfo.ullAvailPhys) / (1024 * 1024);
 
-    std::ostringstream out;
-    out << "Memory: " << used << " / " << total << " MB\n"<<(used/total)*100.0<<"%";
-    return out.str();
+    std::ostringstream out; //to return the whole coutput string as a return string
+    out << "Memory: " << used << " / " << total << " MB\n"<<(used/total)*100.0<<"%"; //this is a string which is actually output
+    return out.str();//returns the output string mentioned above
 }
