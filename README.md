@@ -9,6 +9,10 @@ A robust terminal application made from pure cpp which works as your command-lin
 * Useful functions and options
 
 ## Tech stack
+* C++
+* Makefile
+* Object-Oriented programming
+* 
 
 ## Future upgrades
 
