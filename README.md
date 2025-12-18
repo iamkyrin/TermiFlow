@@ -19,7 +19,8 @@ A robust terminal application made from pure cpp which works as your command-lin
 
 ## Readme Add-ons
 
-
+## Command(manual):
+g++ src/core/command_handler.cpp src/core/system_stats.cpp src/main.cpp src/features/history.cpp src/features/launch.cpp src/features/shortcuts.cpp src/core/theme_manager.cpp -o a 
 
 
 
