@@ -93,7 +93,7 @@ void cmdHandler() {
             }
         }
         else if (command == "stats") {
-                    ;
+                statsInteractive();
                 } 
         else if (command == "exit" || command == "quit") {
             std::cout << "Command - line terminated !\n";
@@ -107,6 +107,7 @@ void cmdHandler() {
             std::cout << "theme <light/dark>              : Change theme\n";
             std::cout << "config                          : Config settings\n";
             std::cout << "histo                           : Check History\n";
+            std::cout << "stats                           : View system stats (CPU time,Memory usage, Uptime)\n";
             std::cout << "sm                              : Session manager\n";
             std::cout << "exit/quit                       : Exit\n";
         }
