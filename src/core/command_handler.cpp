@@ -8,6 +8,7 @@
 #include "../../include/theme_manager.hpp"
 #include "../../include/shortcuts.hpp"
 #include "../../include/history.hpp"
+#include "../../include/system_stats.hpp"
 
 //launch module is having errors; shortcut module works but mapping is wrong with wrong output , has errors too !!. Rest of the modules work correctly.
 void cmdHandler() {
@@ -57,7 +58,7 @@ void cmdHandler() {
                     s.remove(tokens[2]);    //remove 'c' from list of shortcuts mapped to 'chrome' 
                 } else if (subcmd == "list") {
                     s.list();
-                } else {
+                }else {
                     std::cout << "Invalid shortcut command! Check 'help'\n";
                 }
             } else {
@@ -91,6 +92,9 @@ void cmdHandler() {
                 std::cout<<"Invalid history method!. Try again.";
             }
         }
+        else if (command == "stats") {
+                    ;
+                } 
         else if (command == "exit" || command == "quit") {
             std::cout << "Command - line terminated !\n";
             return;
