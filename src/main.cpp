@@ -18,7 +18,8 @@ void showMenu() {
     std::cout << "4. Change theme\n";
     std::cout << "5. Config settings\n";
     std::cout << "6. Check History\n";
-    std::cout << "7. Session manager\n";
+    //std::cout << "7. Session manager\n";
+    std::cout << "7. View systems stats\n";
     std::cout << "8. Command handling\n";
     std::cout << "9. Exit\n";
 }
@@ -76,6 +77,8 @@ int main() {
             
             case 6: historyInteractive();
                     break;
+            case 7: statsInteractive();
+                    break;
             case 8: cmdHandler();
                     break;
             default: std::cout<<"Invalid choice !. Try Again.\n";
@@ -83,3 +86,4 @@ int main() {
     }
 return 0;
 }
+
