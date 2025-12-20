@@ -7,7 +7,7 @@ void changeTheme(std::string theme){ //for command-line based
         system("color 70");//white background with black text
     }
     else if(theme=="dark"){
-        system("color 07"); // black backgound with white text / default theme
+        system("color 07"); //black backgound with white text / default theme
     }
     else
         std::cout<<"Invalid theme !\n";
