@@ -26,13 +26,19 @@ void showMenu() {
 }
 
 int main() {
-    int choice;
+    int choice=0;
     std::string buffer;
 
     while (true) {
         showMenu(); //display menu
-        std::cout << "Enter your choice: ";
-        std::cin >> choice;
+        do{
+            if(!isdigit(choice)){ //woeks only when the input is not a digit
+                std::cout<<"Error!. Invalid choice format. (Use digits such as 1, 2, ..., 10)\n";
+            }
+            std::cout<<"Enter your choice: ";
+            std::cin>> choice;
+        }
+        while(!isdigit(choice));//loops if the input is not a digit
         std::getline(std::cin, buffer);
 /*
         switch (choice) {
