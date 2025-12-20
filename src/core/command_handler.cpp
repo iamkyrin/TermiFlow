@@ -10,7 +10,6 @@
 #include "../../include/history.hpp"
 #include "../../include/system_stats.hpp"
 
-//launch module is having errors; shortcut module works but mapping is wrong with wrong output , has errors too !!. Rest of the modules work correctly.
 void cmdHandler() {
     shortcuts s;
     history h;
@@ -62,7 +61,7 @@ void cmdHandler() {
                     std::cout << "Invalid shortcut command! Check 'help'\n";
                 }
             } else {
-                std::cout << "Usage: shortcut <add/remove/list> ..." << std::endl;
+                std::cout << "Usage: shortcut <add/remove/list>  <shortcut>" << std::endl;
             }
         }
         else if(command == "history"){
@@ -96,7 +95,7 @@ void cmdHandler() {
                 statsInteractive();
                 } 
         else if (command == "exit" || command == "quit") {
-            std::cout << "Command - line terminated !\n";
+            std::cout << "Command - handler terminated !\n";
             return;
         }
         else if (command == "help") {
