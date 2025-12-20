@@ -1,4 +1,4 @@
-//system_stats.cpp header file
+//header file for system_stats.cpp
 #ifndef SYSTEM_STATS
 #define SYSTEM_STATS
 
