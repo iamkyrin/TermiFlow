@@ -1,4 +1,4 @@
-//launch.cpp header file
+//header file for launch.cpp
 #ifndef LAUNCHER
 #define LAUNCHER
 #include <string>
