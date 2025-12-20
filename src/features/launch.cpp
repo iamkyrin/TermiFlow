@@ -5,6 +5,7 @@
 #include "../../include/launch.hpp"
 #include "../../include/shortcuts.hpp"
 
+//interactive mode launch app function
 void launchApp() {
     shortcuts s;
     std::string command;
