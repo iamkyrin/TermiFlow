@@ -8,6 +8,7 @@
 #include "../include/config_loader.hpp"
 #include "../include/history.hpp"
 #include "../include/session_manager.hpp"
+#include "../include/system_stats.hpp"
 
 void showMenu() {
     
@@ -74,7 +75,7 @@ int main() {
             case 2: shortcutInteractive();
                     break;
             case 4: changeTheme();
-            
+                    break;
             case 6: historyInteractive();
                     break;
             case 7: statsInteractive();
@@ -86,4 +87,5 @@ int main() {
     }
 return 0;
 }
+
 
