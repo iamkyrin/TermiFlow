@@ -1,7 +1,7 @@
 //theme manager (includes both interactive and command line operations.)
 #include "../../include/theme_manager.hpp"
 
-void changeTheme(std::string theme){ //for command-line based
+void changeTheme(std::string theme){ //for command handler mode
     //std::string themeType;
     if(theme=="light"){
         system("color 70");//white background with black text
