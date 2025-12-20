@@ -9,7 +9,6 @@ std::string SystemStats::getCPU_Usage() {
     // Placeholder for now (fix this after beta release)
     return "CPU: Not available for beta version.";
 }
-//
 
 std::string SystemStats::getMemoryUsage() { //contains built-in and system level functions and keywords
     MEMORYSTATUSEX memInfo;
@@ -20,7 +19,7 @@ std::string SystemStats::getMemoryUsage() { //contains built-in and system level
     long long used  = (memInfo.ullTotalPhys - memInfo.ullAvailPhys) / (1024 * 1024);
 
     std::ostringstream out; //to return the whole coutput string as a return string
-    out << "Memory: " << used << " / " << total << " MB\t [" <<(used/float(total))*100<<"% ]"; //this is a string which is actually output
+    out << "Memory: " << used << " / " << total << " MB\t [" <<(used/float(total))*100<<"% ]"; //this is a string which is actually an output
     return out.str();//returns the output string mentioned above
 }
  //function for getting and calculating uptime in seconds, minutes and hours.
@@ -35,11 +34,11 @@ std::string SystemStats::getUptime() {
     return outputString.str();
 }
 
+//fuction which displays all of the three details
 void statsInteractive(){
     std::cout<<"Stats loading...\n";
     std::string cpuDetails= SystemStats::getCPU_Usage();
     std::string memoryDetails= SystemStats::getMemoryUsage();
     std::string uptimeDetails= SystemStats::getUptime();
     std::cout<<cpuDetails<<"\n"<<memoryDetails<<"\n"<<uptimeDetails<<"\n";
-
 }
