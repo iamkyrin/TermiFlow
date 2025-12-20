@@ -1,4 +1,4 @@
-//theme_manager.cpp header
+//header file for theme_manager.cpp
 #ifndef THEME_MANAGER_H
 #define THEME_MANAGER_H
 
