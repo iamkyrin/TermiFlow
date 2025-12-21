@@ -1,5 +1,6 @@
 //main.cpp: Includes all the application control flow
 #include <iostream>
+#include <cctype>
 #include "../include/command_handler.hpp"
 #include "../include/launch.hpp"
 #include "../include/shortcuts.hpp"
@@ -26,13 +27,13 @@ void showMenu() {
 }
 
 int main() {
-    int choice=0;
+    char choice='0';
     std::string buffer;
 
     while (true) {
         showMenu(); //display menu
         do{
-            if(!isdigit(choice)){ //woeks only when the input is not a digit
+            if(!isdigit(choice)){ //works only when the input is not a digit
                 std::cout<<"Error!. Invalid choice format. (Use digits such as 1, 2, ..., 10)\n";
             }
             std::cout<<"Enter your choice: ";
@@ -76,17 +77,17 @@ int main() {
     }*/
 
         switch(choice){
-            case 1: launchApp();
+            case '1': launchApp();
                     break;
-            case 2: shortcutInteractive();
+            case '2': shortcutInteractive();
                     break;
-            case 4: changeTheme();
+            case '4': changeTheme();
                     break;
-            case 6: historyInteractive();
+            case '6': historyInteractive();
                     break;
-            case 7: statsInteractive();
+            case '7': statsInteractive();
                     break;
-            case 8: cmdHandler();
+            case '8': cmdHandler();
                     break;
             default: std::cout<<"Invalid choice !. Try Again.\n";
         }
