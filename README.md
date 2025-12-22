@@ -54,4 +54,28 @@ It’s designed for:
   shortcuts add  chrome c
   ```
 
+## Project Structure
+
+TermiFlow/
+│
+├── src/
+│   ├── main.cpp              # Entry point
+│   ├── CommandHandler.cpp    # Input parsing & routing
+│   ├── Launcher.cpp          # Application launching logic
+│   ├── Shortcuts.cpp         # Custom shortcut handling
+│   ├── History.cpp           # Command history tracking
+│
+├── include/
+│   ├── CommandHandler.h
+│   ├── Launcher.h
+│   ├── Shortcuts.h
+│   ├── History.h
+│
+├── data/
+│   ├── shortcuts.txt         # User-defined shortcuts
+│   ├── history.txt           # Stored command history
+│
+├── README.md
+└── build/
+
 
