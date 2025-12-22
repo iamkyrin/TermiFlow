@@ -59,7 +59,8 @@ It’s designed for:
 TermiFlow/
 │
 ├── src/
-│   ├── main.cpp              │   ├── core/
+│   ├── main.cpp
+│   ├── core/
 │   │    ├── command_handler.cpp
 │   │    ├── theme_manager.cpp
 │   │    ├── system_stats.cpp
@@ -69,7 +70,8 @@ TermiFlow/
 │   │
 │   ├── features/
 │        ├── launch.cpp
-│        ├── shortcuts.cpp     │        ├── history.cpp
+│        ├── shortcuts.cpp
+│        ├── history.cpp
 │        ├── 
 │        ├── 
 │        ├── 
@@ -95,6 +97,7 @@ TermiFlow/
 ├── README.md
 └── build/
 ```
+
 
 
 
