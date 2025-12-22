@@ -59,12 +59,22 @@ It’s designed for:
 TermiFlow/
 │
 ├── src/
-│   ├── main.cpp              # Entry point
-│   ├── CommandHandler.cpp    # Input parsing & routing
-│   ├── Launcher.cpp          # Application launching logic
-│   ├── Shortcuts.cpp         # Custom shortcut handling
-│   ├── History.cpp           # Command history tracking
-│
+│   ├── main.cpp              # │   ├── core/
+│   │    ├── command_handler.cpp
+│   │    ├── theme_manager.cpp
+│   │    ├── system_stats.cpp
+│   │    ├── 
+│   │    ├── 
+│   │    ├── 
+│   │
+│   ├── features/
+│        ├── launch.cpp
+│        ├── shortcuts.cpp     │        ├── history.cpp
+│        ├── 
+│        ├── 
+│        ├── 
+│        ├── 
+│   
 ├── include/
 │   ├── CommandHandler.h
 │   ├── Launcher.h
@@ -78,5 +88,6 @@ TermiFlow/
 ├── README.md
 └── build/
 ```
+
 
 
