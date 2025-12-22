@@ -59,7 +59,7 @@ It’s designed for:
 TermiFlow/
 │
 ├── src/
-│   ├── main.cpp              # │   ├── core/
+│   ├── main.cpp              │   ├── core/
 │   │    ├── command_handler.cpp
 │   │    ├── theme_manager.cpp
 │   │    ├── system_stats.cpp
@@ -76,18 +76,26 @@ TermiFlow/
 │        ├── 
 │   
 ├── include/
-│   ├── CommandHandler.h
-│   ├── Launcher.h
-│   ├── Shortcuts.h
-│   ├── History.h
-│
+│   ├── command_handler.hpp
+│   ├── launch.hpp
+│   ├── shortcuts.hpp
+│   ├── history.hpp
+│   ├── theme_manager.hpp
+│   ├── system_stats.hpp
+│   ├── 
+│   ├──
+│   ├──
+│   ├──
+│   ├──
+│    
 ├── data/
-│   ├── shortcuts.txt         # User-defined shortcuts
-│   ├── history.txt           # Stored command history
+│   ├── shortcuts.txt   
+│   ├── history.txt           
 │
 ├── README.md
 └── build/
 ```
+
 
 
 
