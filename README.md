@@ -55,7 +55,7 @@ It’s designed for:
   ```
 
 ## Project Structure
-
+```txt
 TermiFlow/
 │
 ├── src/
@@ -77,5 +77,6 @@ TermiFlow/
 │
 ├── README.md
 └── build/
+```
 
 
