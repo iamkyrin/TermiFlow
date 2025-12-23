@@ -60,6 +60,14 @@ It’s designed for:
 * Enables reviewing past actions
 * Foundation for future analytics & suggesti
 
+### Terminal theme management
+* Provides light and dark theme for terminals
+* One command action
+
+### Command history 
+* Stores every command typed in command-line mode.
+* Displays commands upto thr most recent command.
+  
 ## Project Structure
 ```txt
 TermiFlow/
@@ -107,6 +115,7 @@ TermiFlow/
 
 ### Author
 tecnolgd
+
 
 
 
