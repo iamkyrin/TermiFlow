@@ -56,7 +56,7 @@ int main() {
                 changeTheme();
                 break;
             case 5:
-                config(); //N/A
+                configLoader(); //N/A
                 break;
             case 6:
                 historyInteractive();
