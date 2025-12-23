@@ -1,4 +1,4 @@
-8
+
 # TermiFlow
 
 > **A modular, extensible terminal productivity launcher written in C++**  
@@ -71,7 +71,12 @@ It’s designed for:
 ### System stats view
 * Displays system stats like **CPU usage(N/A)**, **Memory usage** and **Uptime**
 * Currently works for windows systems.
-  
+
+## How it works?
+
+
+
+
 ## Project Structure
 ```txt
 TermiFlow/
@@ -119,6 +124,7 @@ TermiFlow/
 
 ### Author
 tecnolgd
+
 
 
 
