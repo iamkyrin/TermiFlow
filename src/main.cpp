@@ -41,7 +41,7 @@ int main() {
         }
         while(!isdigit(choice));//loops if the input is not a digit
         std::getline(std::cin, buffer);
-/*
+
         switch (choice) {
             case 1:
                 launchApp();
@@ -62,10 +62,10 @@ int main() {
                 historyInteractive();
                 break;
             case 7:
-                statsInteractive();// Partially N/A
+                statsInteractive(); // Partially N/A
                 break;
             case 8: 
-                sessionManager();
+                sessionManager(); //N/A
                 break;
             case 9:
                 cmdHandler();
@@ -77,11 +77,8 @@ int main() {
             default:
                 std::cout << "Invalid option!. Try again.\n";
         }
-    }*/
-
-        
-
-return 0;
+    }
+    return 0;
 }
 
 
