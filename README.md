@@ -74,7 +74,9 @@ It’s designed for:
 
 ## How it works?
 
+## Sample Outputs
 
+## Future Upgrades
 
 
 ## Project Structure
@@ -124,6 +126,7 @@ TermiFlow/
 
 ### Author
 tecnolgd
+
 
 
 
