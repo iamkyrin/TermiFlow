@@ -47,7 +47,7 @@ int main() {
                 launchApp();
                 break;
             case 2:
-                shortcutsInteractive(); 
+                shortcutInteractive(); 
                 break;
             case 3:
                 sessionManager();  //N/A
