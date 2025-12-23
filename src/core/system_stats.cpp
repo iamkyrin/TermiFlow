@@ -7,7 +7,7 @@
 
 std::string SystemStats::getCPU_Usage() {
     // Placeholder for now (fix this after beta release)
-    return "CPU: Not available for beta version.";
+    return "CPU: N/A";
 }
 
 std::string SystemStats::getMemoryUsage() { //contains built-in and system level functions and keywords
