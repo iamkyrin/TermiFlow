@@ -1,4 +1,4 @@
-
+8
 # TermiFlow
 
 > **A modular, extensible terminal productivity launcher written in C++**  
@@ -8,7 +8,7 @@
 
 ## What is TermiFlow?
 
-**TermiFlow** is a command-driven terminal tool that lets users **launch applications, execute shortcuts, and track command history** — all from a single, fast, keyboard-centric interface.
+**TermiFlow** is a command-driven terminal tool that lets users **launch applications, execute shortcuts, track command history**, and **much more** — all from a single, fast, keyboard-centric interface.
 
 Think of it as:
 - a ***minimal launcher***
@@ -119,6 +119,7 @@ TermiFlow/
 
 ### Author
 tecnolgd
+
 
 
 
