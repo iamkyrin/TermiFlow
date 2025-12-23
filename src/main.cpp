@@ -44,54 +44,43 @@ int main() {
 /*
         switch (choice) {
             case 1:
-                launchApp();//launch.cpp
+                launchApp();
                 break;
             case 2:
-                manageShortcuts();//shortcuts.cpp
+                shortcutsInteractive(); 
                 break;
             case 3:
-                showRunningTasks(); //task_manager.cpp
+                showRunningTasks();  //N/A
                 break;
             case 4:
-                changeTheme(); //terminal theme change
+                changeTheme();
                 break;
             case 5:
-                config(); //config_loader.cpp
+                config(); //N/A
                 break;
             case 6:
-                history(); //history.cpp
+                historyInteractive();
                 break;
             case 7:
-                sessionManager(); //session_manager.cpp
+                statsInteractive();// Partially N/A
                 break;
-                case 8:
-                cmdHandler(); //command_handler.cpp
+            case 8: 
+                sessionManager();
+                break;
+            case 9:
+                cmdHandler();
                 break;
                 
-            case 9:
+            case 10:
                 std::cout <<"Application terminated..\nHave a nice day!\n";
                 return 0;
             default:
-                std::cout << "Invalid option!\n";
+                std::cout << "Invalid option!. Try again.\n";
         }
     }*/
 
-        switch(choice){
-            case '1': launchApp();
-                    break;
-            case '2': shortcutInteractive();
-                    break;
-            case '4': changeTheme();
-                    break;
-            case '6': historyInteractive();
-                    break;
-            case '7': statsInteractive();
-                    break;
-            case '8': cmdHandler();
-                    break;
-            default: std::cout<<"Invalid choice !. Try Again.\n";
-        }
-    }
+        
+
 return 0;
 }
 
