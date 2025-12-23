@@ -5,4 +5,6 @@
 
 #include <iostream>
 
+void configLoader();
+
 #endif
