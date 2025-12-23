@@ -53,12 +53,6 @@ It’s designed for:
   ```bash
   shortcuts add  chrome c
   ```
-### Shortcut-to-command mapping
-* Designed for fast recall and muscle memory
-* Command History
-* Stores previously executed commands
-* Enables reviewing past actions
-* Foundation for future analytics & suggestion
 
 ### Terminal theme management
 * Provides light and dark theme for terminals
