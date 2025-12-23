@@ -50,7 +50,7 @@ int main() {
                 shortcutsInteractive(); 
                 break;
             case 3:
-                showRunningTasks();  //N/A
+                sessionManager();  //N/A
                 break;
             case 4:
                 changeTheme();
