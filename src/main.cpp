@@ -20,14 +20,14 @@ void showMenu() {
     std::cout << "4. Change theme\n";
     std::cout << "5. Config settings\n";
     std::cout << "6. Check History\n";
-    //std::cout << "7. Session manager\n";
     std::cout << "7. View systems stats\n";
-    std::cout << "8. Command handling\n";
-    std::cout << "9. Exit\n";
+    std::cout << "8. Session manager\n";
+    std::cout << "9. Command handling\n";
+    std::cout << "10. Exit\n";
 }
 
 int main() {
-    char choice='0';
+    char choice="0";
     std::string buffer;
 
     while (true) {
@@ -43,35 +43,34 @@ int main() {
         std::getline(std::cin, buffer);
 
         switch (choice) {
-            case 1:
+            case '1':
                 launchApp();
                 break;
-            case 2:
+            case '2':
                 shortcutInteractive(); 
                 break;
-            case 3:
+            case '3':
                 sessionManager();  //N/A
                 break;
-            case 4:
+            case '4':
                 changeTheme();
                 break;
-            case 5:
+            case '5':
                 configLoader(); //N/A
                 break;
-            case 6:
+            case '6':
                 historyInteractive();
                 break;
-            case 7:
+            case '7':
                 statsInteractive(); // Partially N/A
                 break;
-            case 8: 
+            case '8': 
                 sessionManager(); //N/A
                 break;
-            case 9:
+            case '9':
                 cmdHandler();
                 break;
-                
-            case 10:
+            case '10':  //error check this: 10 is not a char so when choice is given as 10 its assumed as 1(i.e., launchApp())
                 std::cout <<"Application terminated..\nHave a nice day!\n";
                 return 0;
             default:
