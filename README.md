@@ -58,7 +58,7 @@ It’s designed for:
 * Command History
 * Stores previously executed commands
 * Enables reviewing past actions
-* Foundation for future analytics & suggesti
+* Foundation for future analytics & suggestion
 
 ### Terminal theme management
 * Provides light and dark theme for terminals
@@ -67,6 +67,10 @@ It’s designed for:
 ### Command history 
 * Stores every command typed in command-line mode.
 * Displays commands upto thr most recent command.
+
+### System stats view
+* Displays system stats like **CPU usage(N/A)**, **Memory usage** and **Uptime**
+* Currently works for windows systems.
   
 ## Project Structure
 ```txt
@@ -115,6 +119,7 @@ TermiFlow/
 
 ### Author
 tecnolgd
+
 
 
 
