@@ -83,8 +83,8 @@ TermiFlow/
 │   │    ├── theme_manager.cpp
 │   │    ├── system_stats.cpp
 │   │    ├── config_loader.cpp 
-│   │    ├── session_manager.cpp
-│   │    ├── 
+│   │    ├── task_manager.cpp
+│   │    
 │   │
 │   ├── features/
 │        ├── launch.cpp
@@ -119,6 +119,7 @@ TermiFlow/
 
 ### Author
 tecnolgd
+
 
 
 
