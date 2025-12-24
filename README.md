@@ -112,15 +112,17 @@ TermiFlow/
 │   ├── banner.txt   
 │
 ├── config/
-│   ├── termicode.conf             
+│   ├── termi_flow.conf       
 │
 ├── README.md
+├── .gitignore
 └── build/
 ```
 
 
 ### Author
 tecnolgd
+
 
 
 
