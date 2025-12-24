@@ -112,7 +112,7 @@ TermiFlow/
 │   ├── banner.txt   
 │
 ├── config/
-│   ├── termi              
+│   ├── termicode.conf             
 │
 ├── README.md
 └── build/
@@ -121,6 +121,7 @@ TermiFlow/
 
 ### Author
 tecnolgd
+
 
 
 
