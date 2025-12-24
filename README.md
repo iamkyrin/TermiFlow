@@ -90,10 +90,10 @@ TermiFlow/
 │        ├── launch.cpp
 │        ├── shortcuts.cpp
 │        ├── history.cpp
-│        ├── 
-│        ├── 
-│        ├── 
-│        ├── 
+│        ├── session_manager.cpp
+│         
+│       
+│     
 │   
 ├── include/
 │   ├── command_handler.hpp
@@ -102,13 +102,13 @@ TermiFlow/
 │   ├── history.hpp
 │   ├── theme_manager.hpp
 │   ├── system_stats.hpp
-│   ├── 
-│   ├──
-│   ├──
-│   ├──
-│   ├──
+│   ├── session_manager.hpp
+│   ├── config_loader.hpp
+│   ├── task_manager.hpp
 │    
-├── data/
+│   
+│    
+├── assets/
 │   ├── shortcuts.txt   
 │   ├── history.txt           
 │
@@ -119,6 +119,7 @@ TermiFlow/
 
 ### Author
 tecnolgd
+
 
 
 
