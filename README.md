@@ -109,8 +109,10 @@ TermiFlow/
 │   
 │    
 ├── assets/
-│   ├── shortcuts.txt   
-│   ├── history.txt           
+│   ├── banner.txt   
+│
+├── config/
+│   ├── termi              
 │
 ├── README.md
 └── build/
@@ -119,6 +121,7 @@ TermiFlow/
 
 ### Author
 tecnolgd
+
 
 
 
