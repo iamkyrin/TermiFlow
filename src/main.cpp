@@ -23,7 +23,7 @@ void showMenu() {
     std::cout << "7. View systems stats\n";
     std::cout << "8. Session manager\n";
     std::cout << "9. Command handling\n";
-    std::cout << "10. Exit\n";
+    std::cout << "0. Exit\n";
 }
 
 int main() {
@@ -70,7 +70,7 @@ int main() {
             case '9':
                 cmdHandler();
                 break;
-            case '10':  //error check this: 10 is not a char so when choice is given as 10 its assumed as 1(i.e., launchApp())
+            case '0':  //error check this: 10 is not a char so when choice is given as 10 its assumed as 1(i.e., launchApp())
                 std::cout <<"Application terminated..\nHave a nice day!\n";
                 return 0;
             default:
@@ -79,5 +79,6 @@ int main() {
     }
     return 0;
 }
+
 
 
