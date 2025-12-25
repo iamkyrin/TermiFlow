@@ -46,7 +46,7 @@ It’s designed for:
 - Platform-aware execution logic (Windows-focused for now)
 
 ### Custom Shortcuts
-- Users can define their own shortcuts  
+- Users can define their **own** shortcuts  
   Example:
   ```bash
   shortcuts add  chrome c
@@ -122,6 +122,7 @@ TermiFlow/
 
 ### Author
 tecnolgd
+
 
 
 
