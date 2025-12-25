@@ -66,6 +66,8 @@ It’s designed for:
 
 ## How it works?
 
+## How to run? 
+
 ## Sample Outputs
 
 ## Future Upgrades
@@ -122,6 +124,7 @@ TermiFlow/
 
 ### Author
 tecnolgd
+
 
 
 
