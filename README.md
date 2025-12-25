@@ -53,7 +53,7 @@ It’s designed for:
   ```
 
 ### Terminal theme management
-* Provides light and dark theme for terminals
+* Provides *light* and *dark* theme for terminals
 * One command action
 
 ### Command history 
@@ -122,6 +122,7 @@ TermiFlow/
 
 ### Author
 tecnolgd
+
 
 
 
