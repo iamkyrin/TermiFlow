@@ -42,8 +42,8 @@ It’s designed for:
 - Gracefully handles unknown commands
 
 ### Application Launcher
-- Launches system applications directly from the terminal
-- Platform-aware execution logic (Windows-focused for now)
+- Launches system applications **directly** from the terminal
+- **Platform-aware** execution logic (Windows-focused for now)
 
 ### Custom Shortcuts
 - Users can define their **own** shortcuts  
@@ -124,6 +124,7 @@ TermiFlow/
 
 ### Author
 tecnolgd
+
 
 
 
