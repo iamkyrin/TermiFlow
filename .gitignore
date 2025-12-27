@@ -1,6 +1,7 @@
 #.gitignore file
 
 *.exe
+*.exe-static
 *.tmp
 *.out
 *.log
