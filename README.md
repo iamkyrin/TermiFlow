@@ -127,24 +127,3 @@ x86_64-w64-mingw32-g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termifl
 
 ### Author
 tecnolgd
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
