@@ -54,7 +54,7 @@ It’s designed for:
 
 ### Terminal theme management
 * Provides *light* and *dark* theme for terminals
-* One command action
+* **One command** action
 
 ### Command history 
 * Stores every command typed in command-line mode.
