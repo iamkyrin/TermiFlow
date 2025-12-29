@@ -78,8 +78,11 @@ It’s designed for:
 ## How to run? 
 
 ## Sample Outputs
+
 ## Documentation
 
+## License
+[MIT](flagship_1/LICENSE.md)
 ## Future Upgrades
 **Cross-platform** support (Linux, macOS)
 Plugin system for third-party modules
