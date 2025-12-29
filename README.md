@@ -65,6 +65,9 @@ It’s designed for:
 * Currently works for windows systems.
 
 ## How it works?
+* TermiFlow is built around a **modular C++** core.    
+* Each feature (launching, shortcuts, history, etc.) is implemented as a separate module, making it easy to extend and maintain.    
+* The command handler parses user input and dispatches it to the appropriate module. Configuration and themes are managed via simple text files.
 
 ## How to run? 
 
