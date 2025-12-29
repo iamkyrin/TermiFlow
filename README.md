@@ -123,6 +123,9 @@ TermiFlow/
 ```cmd
 x86_64-w64-mingw32-g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termiflow.exe -static -static-libgcc -static-libstdc++
 ```
+### Value this repo ?
+* If you feel this repository has impacted positively to your dev flow, consider dropping a star or hitting fork.
+* Contributions are welcome to make this tool to the best of its abilities.
 
 ### Author
 tecnolgd
