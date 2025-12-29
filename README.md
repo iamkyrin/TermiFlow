@@ -72,6 +72,11 @@ It’s designed for:
 ## Documentation
 
 ## Future Upgrades
+**Cross-platform** support (Linux, macOS)
+Plugin system for third-party modules
+Enhanced system stats (CPU, network, etc.)    
+**Scripting** and **automation** features    
+**More** themes and customization options
 
 
 
