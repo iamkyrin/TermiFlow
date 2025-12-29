@@ -78,7 +78,6 @@ It’s designed for:
 ## Project Structure
 ```txt
 TermiFlow/
-│
 ├── src/
 │   ├── main.cpp
 │   ├── core/
@@ -87,17 +86,11 @@ TermiFlow/
 │   │    ├── system_stats.cpp
 │   │    ├── config_loader.cpp 
 │   │    ├── task_manager.cpp
-│   │    
-│   │
 │   ├── features/
 │        ├── launch.cpp
 │        ├── shortcuts.cpp
 │        ├── history.cpp
 │        ├── session_manager.cpp
-│         
-│       
-│     
-│   
 ├── include/
 │   ├── command_handler.hpp
 │   ├── launch.hpp
@@ -108,15 +101,10 @@ TermiFlow/
 │   ├── session_manager.hpp
 │   ├── config_loader.hpp
 │   ├── task_manager.hpp
-│    
-│   
-│    
 ├── assets/
 │   ├── banner.txt   
-│
 ├── config/
 │   ├── termi_flow.conf       
-│
 ├── README.md
 ├── .gitignore
 └── build/
