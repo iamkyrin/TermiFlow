@@ -34,7 +34,7 @@ int main() {
         showMenu(); //display menu
         do{
             if(!isdigit(choice)){ //works only when the input is not a digit
-                std::cout<<"Error!. Invalid choice format. (Use digits such as 1, 2, ..., 10)\n";
+                std::cout<<"Error!. Invalid choice format. (Use digits from 0->9)\n";
             }
             std::cout<<"Enter your choice: ";
             std::cin>> choice;
@@ -70,7 +70,7 @@ int main() {
             case '9':
                 cmdHandler();
                 break;
-            case '0':  //error check this: 10 is not a char so when choice is given as 10 its assumed as 1(i.e., launchApp())
+            case '0':
                 std::cout <<"Application terminated..\nHave a nice day!\n";
                 return 0;
             default:
