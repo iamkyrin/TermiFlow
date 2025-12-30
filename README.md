@@ -84,20 +84,18 @@ It’s designed for:
 * *Detailed documentation will be available in the upcoming versions*
 
 ## License
-[MIT](LICENSE.md)
+[MIT License](LICENSE.md)
 ## Future Upgrades
-**Cross-platform** support (Linux, macOS)
-Plugin system for third-party modules
-Enhanced system stats (CPU, network, etc.)    
-**Scripting** and **automation** features    
-**More** themes and customization options
-
-
+* **Cross-platform** support (Linux, macOS)
+* Plugin system for third-party modules
+* Enhanced system stats (CPU, network, etc.)    
+* **Scripting** and **automation** features    
+* **More** themes and customization options
 
 ## Project Structure
 
 ```txt
-TermiFlow/
+termiFlow/
 ├── src/
 │   ├── main.cpp
 │   ├── core/
@@ -143,6 +141,7 @@ tecnolgd
 
 ### Version
 v0.1.0-beta
+
 
 
 
