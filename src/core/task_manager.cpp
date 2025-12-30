@@ -1,4 +1,4 @@
-// Will be implemented in the upcoming version releases.
+// Will be implemented in the upcoming versions.
 #include "../../include/task_manager.hpp"
 
 void taskManager(){
