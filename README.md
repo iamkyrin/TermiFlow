@@ -80,6 +80,8 @@ It’s designed for:
 ## Sample Outputs
 
 ## Documentation
+* ***Refer comments in the code and header files for getting a basic understanding***      
+* ***Detailed documentation will be available in the upcoming versions***
 
 ## License
 [MIT](flagship_1/LICENSE.md)
@@ -141,3 +143,4 @@ tecnolgd
 
 ### Version
 v0.1.0-beta
+
