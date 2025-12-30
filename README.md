@@ -84,7 +84,7 @@ It’s designed for:
 * *Detailed documentation will be available in the upcoming versions*
 
 ## License
-[MIT](termiflow/LICENSE.md)
+[MIT](termiflow\LICENSE.md)
 ## Future Upgrades
 **Cross-platform** support (Linux, macOS)
 Plugin system for third-party modules
@@ -143,6 +143,7 @@ tecnolgd
 
 ### Version
 v0.1.0-beta
+
 
 
 
