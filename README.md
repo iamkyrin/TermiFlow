@@ -59,21 +59,21 @@ It’s designed for:
   ```
 
 ### Terminal theme management
-* Provides *light* and *dark* theme for terminals
-* **One command** action
+- Provides *light* and *dark* theme for terminals
+- **One command** action
 
 ### Command history 
-* Stores every command typed in command-line mode.
-* Displays commands upto thr most recent command.
+- Stores every command typed in command-line mode.
+- Displays commands upto thr most recent command.
 
 ### System stats view
-* Displays system stats like **CPU usage(N/A)**, **Memory usage** and **Uptime**
-* Currently works for windows systems.
+- Displays system stats like **CPU usage(N/A)**, **Memory usage** and **Uptime**
+- Currently works for windows systems.
 
 ## How it works?
-* TermiFlow is built around a **modular C++** core.    
-* Each feature (launching, shortcuts, history, etc.) is implemented as a separate module, making it easy to extend and maintain.    
-* The command handler parses user input and dispatches it to the appropriate module. Configuration and themes are managed via simple text files.
+- TermiFlow is built around a **modular C++** core.    
+- Each feature (launching, shortcuts, history, etc.) is implemented as a separate module, making it easy to extend and maintain.    
+- The command handler parses user input and dispatches it to the appropriate module. Configuration and themes are managed via simple text files.
 
 ## Installation
 
