@@ -75,13 +75,148 @@ It’s designed for:
 * Each feature (launching, shortcuts, history, etc.) is implemented as a separate module, making it easy to extend and maintain.    
 * The command handler parses user input and dispatches it to the appropriate module. Configuration and themes are managed via simple text files.
 
-## How to run? 
+## Installation
+
+### Prerequisites
+- Linux/Windows OS with g++ compiler
+- Basic terminal/command-line knowledge
+
+### Build Instructions
+
+**On Linux:**
+```bash
+git clone https://github.com/tecnolgd/termiflow.git
+```
+```bash
+cd termiflow
+```
+```bash
+g++ -g -fexceptions src/main.cpp src/core/*.cpp src/features/*.cpp -I./include -o termiflow
+```
+```bash
+./termiflow
+```
+
+**On Windows (MinGW):**
+```cmd
+x86_64-w64-mingw32-g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termiflow.exe -static -static-libgcc -static-libstdc++
+termiflow.exe
+```
+
+## How to Run
+
+After building, run the application:
+
+```bash
+./termiflow     # for Linux
+
+./termiflow.exe   # for Windows
+```
+
+## Usage & Mini-Guide
+
+### Starting TermiFlow
+Once launched, TermiFlow operates in a command-driven terminal mode where you can:
+
+### Available Commands
+
+#### Application Launcher
+Launch system applications directly from the terminal:
+```bash
+launch chrome          # Opens Chrome browser
+launch code            # Opens VS Code editor
+launch [application]   # Launch any registered application
+```
+
+#### Custom Shortcuts
+Define and use custom shortcuts for frequently used commands:
+```bash
+shortcuts add chrome c          # Add shortcut 'c' for chrome
+shortcuts list                  # View all shortcuts
+c                              # Use the shortcut to launch. E.g., "launch c"
+```
+
+#### Command History
+View previously executed commands:
+```bash
+history list                        # Display command history
+history clear                       # Clear command history
+history goto <index>                # Go to particular indexed command. Currently N/A             
+```
+
+#### Theme Management
+Switch between light and dark themes:
+```bash
+theme dark                     # Switch to dark theme
+theme light                    # Switch to light theme
+```
+
+#### System Stats
+View system information:
+```bash
+stats                          # Display CPU (N/A), Memory, Uptime (Windows-focused)
+``` 
+
+#### Session Management (N/A)
+Save and manage your workflow sessions:
+```bash
+session save [name]            # Save current session
+session load [name]            # Load a saved session
+```
+
+## Configuration (N/A)
+
+Edit `config/termi_flow.conf` to customize your experience:
+
+```ini
+# Example configuration
+theme=dark
+history_limit=100
+autoload_session=false
+```
+
+## Features Overview
+
+| Feature | Description | Status |
+|---------|-------------|--------|
+| **Command Handler** | Central command parser and dispatcher | ✅ Implemented |
+| **Application Launcher** | Launch system applications directly | ✅ Implemented |
+| **Custom Shortcuts** | Define your own command shortcuts | ✅ Implemented |
+| **Theme Manager** | Light/Dark terminal themes | ✅ Implemented |
+| **Command History** | Display previous commands | ✅ Implemented |
+| **System Stats** | Display CPU, Memory, Uptime info | ✅ Implemented (Windows) |
+| **Session Manager** | Save and restore workflow sessions | ❌ N/A |
+| **Task Manager** | Task execution and management | ❌ N/A |
+
+## Troubleshooting
+
+**Application won't start:**
+- Ensure all dependencies (g++ compiler) are installed
+- Check file permissions: `chmod +x ./build/main`
+- Verify the build was successful
+
+**Config file not loading:**
+- Ensure `config/termi_flow.conf` exists in the correct location
+- Check file syntax and formatting
+
+**Shortcuts not working:**
+- Verify shortcuts were saved correctly with `shortcuts list`
+- Re-add shortcuts if needed: `shortcuts add [app] [shortcut]`
+
+**System stats showing N/A:**
+- Currently optimized for Windows systems
+- Cross-platform support coming soon
 
 ## Sample Outputs
 
 ## Documentation
-* *Refer comments in the code and header files for getting a basic understanding*      
-* *Detailed documentation will be available in the upcoming versions*
+
+For more details, refer to:
+- **Code comments** in source files for implementation details
+- **Header files** in `include/` directory for API documentation
+- **Configuration examples** in `config/termi_flow.conf`
+
+*Detailed documentation site coming in future versions*
 
 ## License
 [MIT License](LICENSE.md)
@@ -128,20 +263,48 @@ termiFlow/
 └── build/
 ```
 
-## Manual command build
-* **Note: **This build has been made in the linux terminal.
-```cmd
+## Manual Build Command
+
+For advanced users, here's the direct compilation command:
+
+```bash
 x86_64-w64-mingw32-g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termiflow.exe -static -static-libgcc -static-libstdc++
 ```
-### Value this repo ?
-* If you feel this repository has impacted positively to your dev flow, consider dropping a star or hitting fork.
-* Contributions are welcome to make this tool to the best of its abilities.
 
-### Author
-tecnolgd
+## Contributing
 
-### Version
-v0.1.0-beta
+Contributions are welcome! Help make TermiFlow better by:
+- Reporting bugs
+- Suggesting features
+- Submitting pull requests
+- Improving documentation
+
+## Support This Project
+
+If TermiFlow has positively impacted your workflow, consider:
+- ⭐ Starring this repository
+- 🍴 Forking the project
+- 💬 Sharing feedback and suggestions
+- 🤝 Contributing code or documentation
+
+## Author & Version
+
+- **Author:** tecnolgd  
+- **Version:** v0.1.0-beta  
+- **License:** [MIT License](LICENSE.md)
+
+## Roadmap & Future Upgrades
+
+- ✅ **Current:** C++ core with modular architecture
+- 🔄 **In Progress:** Cross-platform support (Linux, macOS)
+- 📋 **Planned:**
+  - Plugin system for third-party modules
+  - Implemetation of new functionalities.
+  - Enhanced system stats (CPU, network, etc.)
+  - Scripting and automation features
+  - Additional themes and customization options
+  - Detailed documentation website
+  - Performance optimizations
 
 
 
