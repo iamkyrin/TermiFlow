@@ -192,21 +192,21 @@ autoload_session=false
 ## Troubleshooting
 
 **Application won't start:**
-- Ensure all dependencies (g++ compiler) are installed
-- Check file permissions: `chmod +x ./build/main`
-- Verify the build was successful
+- Ensure all dependencies (g++ compiler) are installed.
+- Check file permissions: `chmod +x ./build/main`.
+- Verify the build was successful.
 
 **Config file not loading:** (N/A)
-- Ensure `config/termi_flow.conf` exists in the correct location
-- Check file syntax and formatting
+- Ensure `config/termi_flow.conf` exists in the correct location.
+- Check file syntax and formatting.
 
 **Shortcuts not working:**
-- Verify shortcuts were saved correctly with `shortcuts list`
-- Re-add shortcuts if needed: `shortcuts add [app] [shortcut]`
+- Verify shortcuts were saved correctly with `shortcuts list`.
+- Re-add shortcuts if needed: `shortcuts add [app] [shortcut]`.
 
 **System stats display:**
-- Currently optimized for Windows systems
-- Cross-platform support coming soon
+- Currently optimized for Windows systems.
+- Cross-platform support coming soon.
 
 ## Sample GIF
 
@@ -299,16 +299,17 @@ If TermiFlow has positively impacted your workflow, consider:
 
 - ✅ **Current:** 
   - C++ core with modular architecture    
-  - Currently Windows-optimized. Linux/macOS support coming soon"
+  - Currently Windows-optimized. Linux/macOS support coming soon."
 - 🔄 **In Progress:** Cross-platform support (Linux, macOS)
 - 📋 **Planned:**
   - Plugin system for third-party modules
-  - Implemetation of new functionalities.
+  - Implemetation of new functionalities
   - Enhanced system stats (CPU, network, etc.)
   - Scripting and automation features
   - Additional themes and customization options
   - Detailed documentation website
   - Performance optimizations
+  - cmake for efficient tool build and run
 
 
 
