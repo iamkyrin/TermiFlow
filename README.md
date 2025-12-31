@@ -258,8 +258,8 @@ termiFlow/
 │   ├── task_manager.hpp
 ├── assets/
 │   ├── banner.txt 
-│  |── termiflow.GIF
-│ ── config/
+│   |── termiflow.GIF
+│── config/
 │   ├── termiflow.conf       
 ├── README.md
 ├── .gitignore
