@@ -27,7 +27,7 @@ void showMenu() {
 }
 
 int main() {
-    char choice="0";
+    char choice='0';
     std::string buffer;
 
     while (true) {
