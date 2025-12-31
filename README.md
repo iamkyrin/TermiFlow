@@ -73,7 +73,7 @@ It’s designed for:
 ## How it works?
 - TermiFlow is built around a **modular C++** core.    
 - Each feature (launching, shortcuts, history, etc.) is implemented as a separate module, making it easy to extend and maintain.    
-- The command handler parses user input and dispatches it to the appropriate module. Configuration and themes are managed via simple text files.
+- The command handler parses user input and dispatches it to the appropriate module. Command history and themes are managed via simple text files.
 
 ## Installation
 
@@ -187,6 +187,7 @@ autoload_session=false
 | **System Stats** | Display CPU, Memory, Uptime info | ✅ Implemented (Windows) |
 | **Session Manager** | Save and restore workflow sessions | ❌ N/A |
 | **Task Manager** | Task execution and management | ❌ N/A |
+| **Config Manager** | Tool configurations | ❌ N/A |
 
 ## Troubleshooting
 
@@ -195,7 +196,7 @@ autoload_session=false
 - Check file permissions: `chmod +x ./build/main`
 - Verify the build was successful
 
-**Config file not loading:**
+**Config file not loading:** (N/A)
 - Ensure `config/termi_flow.conf` exists in the correct location
 - Check file syntax and formatting
 
@@ -203,18 +204,18 @@ autoload_session=false
 - Verify shortcuts were saved correctly with `shortcuts list`
 - Re-add shortcuts if needed: `shortcuts add [app] [shortcut]`
 
-**System stats showing N/A:**
+**System stats display:**
 - Currently optimized for Windows systems
 - Cross-platform support coming soon
 
-## Sample Outputs
+## Sample GIF
 
 ## Documentation
 
 For more details, refer to:
 - **Code comments** in source files for implementation details
 - **Header files** in `include/` directory for API documentation
-- **Configuration examples** in `config/termi_flow.conf`
+- [**Sample GIF**]()
 
 *Detailed documentation site coming in future versions*
 
@@ -224,7 +225,8 @@ For more details, refer to:
 - **Cross-platform** support (Linux, macOS)
 - Plugin system for third-party modules
 - Enhanced system stats (CPU, network, etc.)    
-- **Scripting** and **automation** features    
+- **Scripting** and **automation** features 
+- **Config Management** for tool customisation   
 - **More** themes and customization options
 
 ## Project Structure
