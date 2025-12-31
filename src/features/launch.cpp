@@ -11,7 +11,7 @@ void launchApp() {
     std::string command;
     std::string appName;
     std::cout<<"Enter App to be launched: "; 
-    std::cin>>appName;
+    std::getline(std::cin, appName);
     if (s.exists(appName)) { //checks for shortcut if used e.g., 'launch c'
         std::string app = s.getValue(appName);
         launchApp(app);
