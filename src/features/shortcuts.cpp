@@ -12,8 +12,8 @@ void shortcuts::add(const std::string& shortcut, const std::string& app){
 void shortcuts::add(){
     int appChoice;
     std::string appShortcut;
-    std::cout<<"\t-- Available apps --\n";
-    std::cout<<"1: chrome\t2: notepad\t3: youtube\n";
+    std::cout<<"\t-- Available apps for launch --\n";
+    std::cout<<"1: chrome\t2. code\t3: notepad\t4: youtube\n";
     std::cout<<"Select the app to create shortcut for(choose 1/2/3): ";
     std::cin>>appChoice;
     std::cin.ignore(); // Clear the input buffer
@@ -22,9 +22,11 @@ void shortcuts::add(){
     switch(appChoice){
         case 1: add(appShortcut, "chrome");
                 break;
-        case 2: add(appShortcut, "notepad");
+        case 2: add(appShortcut, "code");
                 break;
-        case 3: add(appShortcut, "youtube");
+        case 3: add(appShortcut, "notepad");
+                break;
+        case 4: add(appShortcut, "youtube");
                 break;
         default: std::cout<<"Invalid!. The app you want seems to be missing.\n";
     }
@@ -41,7 +43,7 @@ void shortcuts::remove(){
 
 void shortcuts::remove(const std::string& shortcut){
     shortMap.erase(shortcut); //erase the shortcut from the map
-    std::cout<<"Shortcut for "<<shortcut<<" removed!.\n";
+    std::cout<<"Shortcut /'"<<shortcut<<"/' removed!.\n";
     save();
 }
 
@@ -56,7 +58,7 @@ void shortcuts::save(){
 void shortcuts::list(){
     std::cout << "Registered shortcuts:\n";
     for(auto& p : shortMap) { //for each loop
-        std::cout<<"--"<< p.first << " -> " << p.second << "\n";
+        std::cout<<"* "<< p.first << " --> " << p.second << "\n";
     }
 }
 
