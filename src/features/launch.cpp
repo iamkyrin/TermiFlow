@@ -27,7 +27,7 @@ void launchApp(std::string appName) {
     if (appName == "chrome") {
         command = "start chrome";
     }
-    else if (appName == "vscode") {
+    else if (appName == "code") {
         command = "code";
     }
     else if (appName == "notepad") {
