@@ -77,7 +77,7 @@ void historyInteractive(){
         try {//try catch block for exceptions and error handling.
             std::string cmd = h.get(cmdIndex); //return command e.g., 'launch chrome'
             if (!cmd.empty()) {
-                std::cout << "Command at index" << cmdIndex << ": " << cmd << "\n";
+                std::cout << "Command at index "<< cmdIndex << ": " << cmd << "\n";
                 // Optionally, execute the command:
                 // processCommand(cmd);
             } else {
