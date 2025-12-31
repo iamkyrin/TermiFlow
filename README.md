@@ -1,9 +1,9 @@
-![MIT License](https://img.shields.io/github/license/tecnolgd/termiflow?style=flat)
+![MIT License](https://img.shields.io/github/license/tecnolgd/Termiflow?style=flat)
 ![Static Badge](https://img.shields.io/badge/tools-Open_Source-lightblue)
 ![Static Badge](https://img.shields.io/badge/interface-CLI-white)
 ![Static Badge](https://img.shields.io/badge/build-C++-teal)
 ![Static Badge](https://img.shields.io/badge/release-v.0.1.0-beta)
-![GitHub Discussions](https://img.shields.io/github/discussions/tecnolgd/termiflow)
+![GitHub Discussions](https://img.shields.io/github/discussions/tecnolgd/Termiflow)
 
 # TermiFlow
 
@@ -258,8 +258,8 @@ termiFlow/
 │   ├── task_manager.hpp
 ├── assets/
 │   ├── banner.txt 
-|   |── termiflow.GIF
-|── config/
+│  |── termiflow.GIF
+│ ── config/
 │   ├── termiflow.conf       
 ├── README.md
 ├── .gitignore
