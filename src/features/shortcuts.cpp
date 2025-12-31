@@ -3,10 +3,10 @@
 #include <fstream>
 #include "../../include/shortcuts.hpp"
 
-void shortcuts::add(const std::string& value, const std::string& key){
-    shortMap[value]=key; //assigning value to key(the default command word)
+void shortcuts::add(const std::string& shortcut, const std::string& app){
+    shortMap[shortcut]=app; //store shortMap[shortcut] = app
     save();
-    std::cout<<"Yeah !. Shortcut added: "<<key<<" -> "<<value<<"\n";
+    std::cout<<"Yeah !. Shortcut added: "<<app<<" -> "<<shortcut<<"\n";
 }
 
 void shortcuts::add(){
@@ -20,11 +20,11 @@ void shortcuts::add(){
     std::cout<<"Create a custom shortcut: ";
     std::getline(std::cin, appShortcut);  //shortcut key e.g., 'ch' for chrome
     switch(appChoice){
-        case 1: add("chrome", appShortcut);
+        case 1: add(appShortcut, "chrome");
                 break;
-        case 2: add("notepad", appShortcut);
+        case 2: add(appShortcut, "notepad");
                 break;
-        case 3: add("youtube", appShortcut);
+        case 3: add(appShortcut, "youtube");
                 break;
         default: std::cout<<"Invalid!. The app you want seems to be missing.\n";
     }
@@ -35,12 +35,13 @@ void shortcuts::remove(){
     list();
     std::cout<<"Enter shortcut to be removed: ";
     std::cin>>appShortcut;
+    std::cin.ignore(); // Clear the input buffer
     remove(appShortcut);
 }
 
-void shortcuts::remove(const std::string& key){
-    shortMap.erase(key); //erase() : erases the 'value' passed to it from the unordered map.
-    std::cout<<"Shortcut for "<<key<<" removed!.\n";
+void shortcuts::remove(const std::string& shortcut){
+    shortMap.erase(shortcut); //erase the shortcut from the map
+    std::cout<<"Shortcut for "<<shortcut<<" removed!.\n";
     save();
 }
 
@@ -62,9 +63,12 @@ void shortcuts::list(){
 void shortcuts::load() {
     shortMap.clear();
     std::ifstream infile("shortcut_det.txt");
+    if(!infile.is_open()) {
+        return;  // File doesn't exist yet, that's okay
+    }
     std::string line;
     while (std::getline(infile, line)) {
-        size_t eq = line.find('='); //needs explanation for the entire function!!
+        size_t eq = line.find('=');
         if (eq != std::string::npos) {
             std::string key = line.substr(0, eq);
             std::string value = line.substr(eq + 1);
@@ -79,18 +83,15 @@ shortcuts::shortcuts() { //needs explanation !!
     load();
 }
 
-bool shortcuts::exists(const std::string& value){
-    if(shortMap.find(value) != shortMap.end()){
-        return true;
-    }
-    return false;
+bool shortcuts::exists(const std::string& shortcut){
+    return (shortMap.find(shortcut) != shortMap.end());
 }
-std::string shortcuts::getValue(const std::string& value){
-    std::string key;
-    if(exists(value)){
-        key= shortMap[value];
+std::string shortcuts::getValue(const std::string& shortcut){
+    auto it = shortMap.find(shortcut);
+    if(it != shortMap.end()){
+        return it->second;
     }
-    return key;  //returns actual default command mapped shortcut. e.g., returns 'chrome' for 'launch c'.
+    return "";  //returns empty string if shortcut not found
 }
 //interactive mode function which handles all shortcut functions.
 void shortcutInteractive(){
@@ -100,6 +101,7 @@ void shortcutInteractive(){
     std::cout<<"<add>\t <remove>\t<list>\n";
     std::cout<<"Enter method to be used: ";
     std::cin>>shortcutMethod;
+    std::cin.ignore(); // Clear the input buffer
                 
     if(shortcutMethod == "add"){
         s.add();
