@@ -208,13 +208,14 @@ autoload_session=false
 - Cross-platform support coming soon.
 
 ## Sample GIF
+![Termiflow GIF](assets/termiflow.GIF)
 
 ## Documentation
 
 For more details, refer to:
 - **Code comments** in source files for implementation details
 - **Header files** in `include/` directory for API documentation
-- [**Sample GIF**]()
+- [**Sample GIF**](assets/termiflow.GIF)
 
 *Detailed documentation site coming in future versions*
 
