@@ -60,11 +60,11 @@ It’s designed for:
 
 ### Terminal theme management
 - Provides *light* and *dark* theme for terminals
-- **One command** action
+- Switch themes with a single command
 
 ### Command history 
 - Stores every command typed in command-line mode.
-- Displays commands upto thr most recent command.
+- Displays commands up to the most recent command.
 
 ### System stats view
 - Displays system stats like **CPU usage(N/A)**, **Memory usage** and **Uptime**
@@ -85,19 +85,17 @@ It’s designed for:
 
 ```bash
 git clone https://github.com/tecnolgd/termiflow.git
-```
-```bash
 cd termiflow
 ```
-**On Windows:**
 
-```cmd
-g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termiflow
+**On Linux:**
+```bash
+g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termiflow -I./include
 ```
 
-**On linux (MinGW):**
+**On Windows (MinGW):**
 ```bash
-x86_64-w64-mingw32-g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termiflow -static -static-libgcc -static-libstdc++
+x86_64-w64-mingw32-g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termiflow.exe -I./include -static -static-libgcc -static-libstdc++
 ```
 
 ## How to Run
@@ -130,8 +128,8 @@ launch [application]   # Launch any registered application
 #### Custom Shortcuts
 Define and use custom shortcuts for frequently used commands:
 ```bash
-shortcuts add chrome c          # Add shortcut 'c' for chrome
-shortcuts list                  # View all shortcuts
+shortcut add chrome c          # Add shortcut 'c' for chrome
+shortcut list                  # View all shortcuts
 shortcut remove c                            # Remove the shortcut 'c' for chrome.
 ```
 
@@ -156,23 +154,6 @@ View system information:
 stats                          # Display CPU (N/A), Memory, Uptime (Windows-focused)
 ``` 
 
-#### Session Management (N/A)
-Save and manage your workflow sessions:
-```bash
-session save [name]            # Save current session
-session load [name]            # Load a saved session
-```
-
-## Configuration (N/A)
-
-Edit `config/termi_flow.conf` to customize your experience:
-
-```ini
-# Example configuration
-theme=dark
-history_limit=100
-autoload_session=false
-```
 
 ## Features Overview
 
@@ -183,10 +164,7 @@ autoload_session=false
 | **Custom Shortcuts** | Define your own command shortcuts | ✅ Implemented |
 | **Theme Manager** | Light/Dark terminal themes | ✅ Implemented |
 | **Command History** | Display previous commands | ✅ Implemented |
-| **System Stats** | Display CPU, Memory, Uptime info | ✅ Implemented (Windows) |
-| **Session Manager** | Save and restore workflow sessions | ❌ N/A |
-| **Task Manager** | Task execution and management | ❌ N/A |
-| **Config Manager** | Configurations for tool customization | ❌ N/A |
+| **System Stats** | Display CPU, Memory, Uptime info | ✅ Implemented (Windows only) |
 
 ## Troubleshooting
 
@@ -194,10 +172,6 @@ autoload_session=false
 - Ensure all dependencies (g++ compiler) are installed.
 - Check file permissions: `chmod +x ./build/main`.
 - Verify the build was successful.
-
-**Config file not loading:** (N/A)
-- Ensure `config/termi_flow.conf` exists in the correct location.
-- Check file syntax and formatting.
 
 **Shortcuts not working:**
 - Verify shortcuts were saved correctly with `shortcuts list`.
@@ -266,14 +240,6 @@ termiFlow/
 └── build/
 ```
 
-## Manual Build Command
-
-For advanced users, here's the direct compilation command:
-
-```bash
-x86_64-w64-mingw32-g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termiflow.exe -static -static-libgcc -static-libstdc++
-```
-
 ## Contributing
 
 Contributions are welcome! Help make TermiFlow better by:
@@ -289,12 +255,6 @@ If TermiFlow has positively impacted your workflow, consider:
 - 🍴 Forking the project
 - 💬 Sharing feedback and suggestions
 - 🤝 Contributing code or documentation
-
-## Author & Version
-
-- **Author:** tecnolgd  
-- **Version:** v0.1.0-beta  
-- **License:** [MIT License](LICENSE.md)
 
 ## Roadmap & Future Upgrades
 
@@ -312,8 +272,8 @@ If TermiFlow has positively impacted your workflow, consider:
   - Performance optimizations
   - cmake for efficient tool build and run
 
+## Author & Version
 
-
-
-
-
+- **Author:** tecnolgd  
+- **Version:** v0.1.0-beta  
+- **License:** [MIT License](LICENSE.md)
