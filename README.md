@@ -1,5 +1,4 @@
-![GitHub License](https://img.shields.io/github/license/tecnolgd/TermiFlow)
-
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Static Badge](https://img.shields.io/badge/tools-Open_Source-lightblue)
 ![Static Badge](https://img.shields.io/badge/interface-CLI-white)
 ![Static Badge](https://img.shields.io/badge/build-C++-teal)
