@@ -16,14 +16,15 @@ void shortcuts::add(){
     std::cout<<"1: chrome\t2: notepad\t3: youtube\n";
     std::cout<<"Select the app to create shortcut for(choose 1/2/3): ";
     std::cin>>appChoice;
+    std::cin.ignore(); // Clear the input buffer
     std::cout<<"Create a custom shortcut: ";
-    std::cin>>appShortcut;  //shortcut key e.g., 'ch' for chrome
+    std::getline(std::cin, appShortcut);  //shortcut key e.g., 'ch' for chrome
     switch(appChoice){
-        case 1: add(appShortcut,"chrome");
+        case 1: add("chrome", appShortcut);
                 break;
-        case 2: add(appShortcut,"notepad");
+        case 2: add("notepad", appShortcut);
                 break;
-        case 3: add(appShortcut,"youtube");
+        case 3: add("youtube", appShortcut);
                 break;
         default: std::cout<<"Invalid!. The app you want seems to be missing.\n";
     }
