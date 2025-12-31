@@ -118,7 +118,7 @@ After building, run the application:
 ### Starting TermiFlow
 Once launched, TermiFlow operates in a command-driven terminal mode where you can:
 
-### Available Commands
+### Available Commands (for command - handler mode)
 
 #### Application Launcher
 Launch system applications directly from the terminal:
@@ -141,7 +141,7 @@ View previously executed commands:
 ```bash
 history list                        # Display command history
 history clear                       # Clear command history
-history goto <index>                # Go to particular indexed command. Currently N/A             
+history goto <index>                # Go to particular indexed command.            
 ```
 
 #### Theme Management
