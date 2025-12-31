@@ -37,6 +37,7 @@ std::string SystemStats::getUptime() {
 //fuction which displays all of the three details
 void statsInteractive(){
     std::cout<<"Stats loading...\n";
+    std::cout<<">>>>>>>>>>>>>>\n";
     std::string cpuDetails= SystemStats::getCPU_Usage();
     std::string memoryDetails= SystemStats::getMemoryUsage();
     std::string uptimeDetails= SystemStats::getUptime();
