@@ -83,24 +83,21 @@ It’s designed for:
 
 ### Build Instructions
 
-**On Linux:**
 ```bash
 git clone https://github.com/tecnolgd/termiflow.git
 ```
 ```bash
 cd termiflow
 ```
-```bash
-g++ -g -fexceptions src/main.cpp src/core/*.cpp src/features/*.cpp -I./include -o termiflow
-```
-```bash
-./termiflow
+**On Windows:**
+
+```cmd
+g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termiflow
 ```
 
-**On Windows (MinGW):**
-```cmd
-x86_64-w64-mingw32-g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termiflow.exe -static -static-libgcc -static-libstdc++
-termiflow.exe
+**On linux (MinGW):**
+```bash
+x86_64-w64-mingw32-g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termiflow -static -static-libgcc -static-libstdc++
 ```
 
 ## How to Run
@@ -108,7 +105,9 @@ termiflow.exe
 After building, run the application:
 
 ```bash
-./termiflow     # for Linux
+termiflow    # for Linux
+#or
+termiflow.exe
 
 ./termiflow.exe   # for Windows
 ```
@@ -133,7 +132,7 @@ Define and use custom shortcuts for frequently used commands:
 ```bash
 shortcuts add chrome c          # Add shortcut 'c' for chrome
 shortcuts list                  # View all shortcuts
-c                              # Use the shortcut to launch. E.g., "launch c"
+shortcut remove c                            # Remove the shortcut 'c' for chrome.
 ```
 
 #### Command History
@@ -141,7 +140,7 @@ View previously executed commands:
 ```bash
 history list                        # Display command history
 history clear                       # Clear command history
-history goto <index>                # Go to particular indexed command.            
+history goto <index>                # Go to a particular command using the index assigned to it.
 ```
 
 #### Theme Management
@@ -187,7 +186,7 @@ autoload_session=false
 | **System Stats** | Display CPU, Memory, Uptime info | ✅ Implemented (Windows) |
 | **Session Manager** | Save and restore workflow sessions | ❌ N/A |
 | **Task Manager** | Task execution and management | ❌ N/A |
-| **Config Manager** | Tool configurations | ❌ N/A |
+| **Config Manager** | Configurations for tool customization | ❌ N/A |
 
 ## Troubleshooting
 
@@ -257,9 +256,10 @@ termiFlow/
 │   ├── config_loader.hpp
 │   ├── task_manager.hpp
 ├── assets/
-│   ├── banner.txt   
-├── config/
-│   ├── termi_flow.conf       
+│   ├── banner.txt 
+|   |── termiflow.GIF
+|── config/
+│   ├── termiflow.conf       
 ├── README.md
 ├── .gitignore
 └── build/
