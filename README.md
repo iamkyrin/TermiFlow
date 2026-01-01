@@ -7,6 +7,8 @@
 
 # TermiFlow
 
+![TermiFlow logo](assets/termiflow_logo.png)
+
 > **A modular, extensible terminal productivity launcher written in C++**  
 > Built to reduce friction between intent and execution.
 
