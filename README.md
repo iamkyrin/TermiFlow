@@ -9,7 +9,7 @@
 
 ![TermiFlow logo](assets/termiflow_logo.png)
 
-> **A modular, extensible terminal productivity launcher written in C++**  
+> **A modular, extensible terminal productivity tool written in C++**  
 > Built to reduce friction between intent and execution.
 
 ## What is TermiFlow?
@@ -278,4 +278,5 @@ If TermiFlow has positively impacted your workflow, consider:
 
 - **Author:** tecnolgd  
 - **Version:** v0.1.0-beta  
+
 - **License:** [MIT License](LICENSE.md)
