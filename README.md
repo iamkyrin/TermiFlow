@@ -139,7 +139,7 @@ View previously executed commands:
 ```bash
 history list                        # Display command history
 history clear                       # Clear command history
-history goto <index>                # Go to a particular command using the index assigned to it.
+history goto [index]              # Go to a particular command using the index assigned to it.
 ```
 
 #### Theme Management
@@ -279,4 +279,5 @@ If TermiFlow has positively impacted your workflow, consider:
 - **Version:** v0.1.0-beta  
 
 - **License:** [MIT License](LICENSE.md)
+
 
