@@ -3,7 +3,6 @@
 ![Static Badge](https://img.shields.io/badge/interface-CLI-white)
 ![Static Badge](https://img.shields.io/badge/made_with-C++-teal)
 ![Static Badge](https://img.shields.io/badge/release-v0.1.0-beta)
-<!--![GitHub Discussions](https://img.shields.io/github/discussions/tecnolgd/TermiFlow)-->
 
 # TermiFlow
 
@@ -280,3 +279,4 @@ If TermiFlow has positively impacted your workflow, consider:
 - **Version:** v0.1.0-beta  
 
 - **License:** [MIT License](LICENSE.md)
+
