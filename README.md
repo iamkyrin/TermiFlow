@@ -5,7 +5,6 @@
 ![Static Badge](https://img.shields.io/badge/release-v0.1.0-beta)
 
 # TermiFlow
-
 ![TermiFlow logo](assets/termiflow_logo.png)
 
 > **A modular, extensible terminal productivity tool written in C++**  
@@ -278,6 +277,7 @@ If TermiFlow has positively impacted your workflow, consider:
 - **Author:** tecnolgd  
 - **Version:** v0.1.0-beta  
 - **License:** [MIT License](LICENSE.md)
+
 
 
 
