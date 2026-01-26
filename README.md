@@ -189,6 +189,7 @@ stats                          # Display CPU (N/A), Memory, Uptime (Windows-focu
 For more details, refer to:
 - **Code comments** in source files for implementation details
 - **Header files** in `include/` directory for API documentation
+- 
 - [**Sample GIF**](assets/termiflow.GIF)
 
 *Detailed documentation site coming in future versions*
@@ -277,6 +278,7 @@ If TermiFlow has positively impacted your workflow, consider:
 - **Author:** tecnolgd  
 - **Version:** v0.1.0-beta  
 - **License:** [MIT License](LICENSE.md)
+
 
 
 
