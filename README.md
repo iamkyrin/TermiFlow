@@ -112,48 +112,6 @@ termiflow.exe
 
 ## Usage & Mini-Guide
 
-### Starting TermiFlow
-Once launched, TermiFlow operates in a command-driven terminal mode where you can:
-
-### Available Commands (for command - handler mode)
-
-#### Application Launcher
-Launch system applications directly from the terminal:
-```bash
-launch chrome          # Opens Chrome browser
-launch code            # Opens VS Code editor
-launch [application]   # Launch any registered application
-```
-
-#### Custom Shortcuts
-Define and use custom shortcuts for frequently used commands:
-```bash
-shortcut add chrome c          # Add shortcut 'c' for chrome
-shortcut list                  # View all shortcuts
-shortcut remove c                            # Remove the shortcut 'c' for chrome.
-```
-
-#### Command History
-View previously executed commands:
-```bash
-history list                        # Display command history
-history clear                       # Clear command history
-history goto [index]              # Go to a particular command using the index assigned to it.
-```
-
-#### Theme Management
-Switch between light and dark themes:
-```bash
-theme dark                     # Switch to dark theme
-theme light                    # Switch to light theme
-```
-
-#### System Stats
-View system information:
-```bash
-stats                          # Display CPU (N/A), Memory, Uptime (Windows-focused)
-``` 
-
 
 ## Features Overview
 
@@ -258,21 +216,6 @@ If TermiFlow has positively impacted your workflow, consider:
 - 💬 Sharing feedback and suggestions
 - 🤝 Contributing code or documentation
 
-## Roadmap & Future Upgrades
-
-- ✅ **Current:** 
-  - C++ core with modular architecture    
-  - Currently Windows-optimized. Linux/macOS support coming soon."
-- 🔄 **In Progress:** Cross-platform support (Linux, macOS)
-- 📋 **Planned:**
-  - Plugin system for third-party modules
-  - Implemetation of new functionalities
-  - Enhanced system stats (CPU, network, etc.)
-  - Scripting and automation features
-  - Additional themes and customization options
-  - Detailed documentation website
-  - Performance optimizations
-  - cmake for efficient tool build and run
 
 ## Author & Version
 
