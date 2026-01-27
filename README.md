@@ -185,6 +185,10 @@ termiFlow/
 │   ├── config_loader.hpp
 │   ├── task_manager.hpp
 ├── assets/
+│   ├── docs/
+│   │   ├── architecture.md
+│   │   ├── command_reference.md
+│   │   ├── roadmap.md
 │   ├── banner.txt 
 │   |── termiflow.GIF
 │── config/
