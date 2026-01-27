@@ -139,11 +139,12 @@ termiflow.exe
 
 ## Documentation
 
-For more details, refer to:
-- **Code comments** in source files for implementation details
-- **Header files** in `include/` directory for API documentation
 - [**Commands Reference**](assets/docs/command_reference.md)
 - [**Roadmap**](assets/docs/roadmap.md)
+
+For more details, refer to:
+- **Code comments** in source files for implementation details
+- **Header files** in `include/` directory for function details
 
 
 ## License
