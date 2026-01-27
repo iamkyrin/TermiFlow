@@ -99,7 +99,6 @@ x86_64-w64-mingw32-g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termifl
 ```
 
 ## How to Run
-
 After building, run the application:
 
 ```bash
@@ -109,10 +108,6 @@ termiflow.exe
 
 ./termiflow.exe   # for Windows
 ```
-
-## Usage & Mini-Guide
-
-
 ## Features Overview
 
 | Feature | Description | Status |
@@ -147,14 +142,13 @@ termiflow.exe
 For more details, refer to:
 - **Code comments** in source files for implementation details
 - **Header files** in `include/` directory for API documentation
-- 
-- [**Sample GIF**](assets/termiflow.GIF)
-
-*Detailed documentation site coming in future versions*
+- [**Commands Reference**](assets/docs/command_reference.md)
+- [**Roadmap**](assets/docs/roadmap.md)
 
 
 ## License
 [MIT License](LICENSE.md)
+
 ## Future Upgrades
 - **Cross-platform** support (Linux, macOS)
 - Plugin system for third-party modules
