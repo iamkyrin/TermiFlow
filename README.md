@@ -194,6 +194,7 @@ For more details, refer to:
 
 *Detailed documentation site coming in future versions*
 
+
 ## License
 [MIT License](LICENSE.md)
 ## Future Upgrades
@@ -278,9 +279,3 @@ If TermiFlow has positively impacted your workflow, consider:
 - **Author:** tecnolgd  
 - **Version:** v0.1.0-beta  
 - **License:** [MIT License](LICENSE.md)
-
-
-
-
-
-
