@@ -6,9 +6,10 @@
 *.out
 *.log
 *.o
-*build/
-*config/
+config/
+build/
 *.txt
 *.dll
-*.vscode/
+.vscode/
 termiflow
+
