@@ -6,8 +6,10 @@
 #include <cstdlib>
 #include <string>
 #include <sstream>
+#include <fstream>
 
 void changeTheme(std::string theme);
 void changeTheme();
+void saveThemeToConfig(const std::string & theme);
 
 #endif
