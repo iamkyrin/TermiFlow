@@ -4,17 +4,27 @@
 void changeTheme(std::string theme){ //for command handler mode
     //std::string themeType;
     saveThemeToConfig(theme);
-    if(theme=="light"){
-        system("clear");
-        std::cout << "\033[47;30m"; // white background with black text
-    }
-    else if(theme=="dark"){
-        system("clear");
-        std::cout << "\033[40;37m"; // black background with white text / default theme
-    }
-    else
-        std::cout<<"Invalid theme !\n";
-    
+    #ifdef _WIN32
+        if(theme=="light"){
+            system("clear");
+            std::cout << "\033[47;30m"; // white background with black text
+        }
+        else if(theme=="dark"){
+            system("clear");
+            std::cout << "\033[40;37m"; // black background with white text / default theme
+        }
+        else
+            std::cout<<"Invalid theme !\n";
+    #else
+        if(theme=="light"){
+            system("color 70");//white background with black text
+        }
+        else if(theme=="dark"){
+            system("color 07"); // black backgound with white text / default theme
+        }
+        else
+            std::cout<<"Invalid theme !\n";
+    #endif
 }
 
 void changeTheme(){  //for interactive mode (menu based)
