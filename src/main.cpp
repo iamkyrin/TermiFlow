@@ -31,6 +31,12 @@ int main() {
     std::string buffer;
 
     while (true) {
+        Config config = loadConfig("config/termiflow.conf");
+
+        if (config.values["behavior.auto_apply_theme"] == "true") {
+            changeTheme(config.values["user_interface.theme"]);
+        }
+
         showMenu(); //display menu
         do{
             if(!isdigit(choice)){ //works only when the input is not a digit
@@ -55,9 +61,9 @@ int main() {
             case '4':
                 changeTheme();
                 break;
-            case '5':
-                configLoader(); //N/A
-                break;
+            //case '5':
+                //configLoader(); //N/A
+                //break;
             case '6':
                 historyInteractive();
                 break;
