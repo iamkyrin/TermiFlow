@@ -1,7 +1,6 @@
-//launch application module: to launch apps via the system() in windows
+//launch application module: to launch apps via the system() call
 
 #include <iostream>
-#include <windows.h>
 #include "../../include/launch.hpp"
 #include "../../include/shortcuts.hpp"
 
@@ -24,6 +23,7 @@ void launchApp() {
 void launchApp(std::string appName) {
     std::string command;
     
+#ifdef _WIN32
     if (appName == "chrome") {
         command = "start chrome";
     }
@@ -40,6 +40,26 @@ void launchApp(std::string appName) {
         std::cout << "Unknown app: " << appName << "\n";
         return;
     }
+#else
+    // Linux commands
+    if (appName == "chrome") {
+        command = "google-chrome &";
+    }
+    else if (appName == "code") {
+        command = "code &";
+    }
+    else if (appName == "notepad") {
+        command = "gedit &";
+    }
+    else if(appName == "youtube"){
+        command = "xdg-open https://www.youtube.com &";
+    }
+    else {
+        std::cout << "Unknown app: " << appName << "\n";
+        return;
+    }
+#endif
+    
     system(command.c_str());
     std::cout << "Launching " << appName << "...\n";
 }
