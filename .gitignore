@@ -6,6 +6,7 @@
 *.out
 *.log
 *.o
+*build/
 *.txt
 *.dll
 *.vscode/
