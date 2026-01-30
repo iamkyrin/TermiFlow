@@ -40,6 +40,8 @@ void launchApp(std::string appName) {
         std::cout << "Unknown app: " << appName << "\n";
         return;
     }
+    std::cout << "Launching " << appName << "...\n";
+    system(command.c_str());
 #else
     // Linux commands
     if (appName == "chrome") {
@@ -60,7 +62,5 @@ void launchApp(std::string appName) {
     }
 #endif
     
-    system(command.c_str());
-    std::cout << "Launching " << appName << "...\n";
 }
 
