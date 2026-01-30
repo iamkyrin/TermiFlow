@@ -106,7 +106,7 @@ void cmdHandler() {
             std::cout << "tasks                           : View running tasks\n";
             std::cout << "theme <light/dark>              : Change theme\n";
             std::cout << "config                          : Config settings\n";
-            std::cout << "histo                           : Check History\n";
+            std::cout << "history <clear/list/goto>       : Check History\n";
             std::cout << "stats                           : View system stats (CPU time,Memory usage, Uptime)\n";
             std::cout << "sm                              : Session manager\n";
             std::cout << "exit/quit                       : Exit\n";
