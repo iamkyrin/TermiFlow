@@ -1,10 +1,15 @@
-// Will be implemented in the upcoming version releases.
+//header file for config.cpp
 
 #ifndef CONFIG_LOADER
 #define CONFIG_LOADER
 
-#include <iostream>
+#include <string>
+#include <unordered_map>
 
-void configLoader();
+struct Config {
+    std::unordered_map<std::string, std::string> values;
+};
+
+Config loadConfig(const std::string& path);
 
 #endif
