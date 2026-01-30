@@ -49,7 +49,7 @@ It’s designed for:
 
 ### Application Launcher
 - Launches system applications **directly** from the terminal
-- **Platform-aware** execution logic (Windows-focused for now)
+- **Platform-aware** execution logic (Windows/Linux)
 
 ### Custom Shortcuts
 - Users can define their **own** shortcuts  
@@ -115,7 +115,8 @@ After building, run the application:
 | **Custom Shortcuts** | Define your own command shortcuts | ✅ Implemented |
 | **Theme Manager** | Light/Dark terminal themes | ✅ Implemented |
 | **Command History** | Display previous commands | ✅ Implemented |
-| **System Stats** | Display CPU, Memory, Uptime info | ✅ Implemented (Windows only) |
+| **System Stats** | Display CPU, Memory, Uptime info | ✅ Implemented (Windows & linux) |
+| **Configuration** | Auto-launch previously used theme as default theme | ✅ Implemented |
 
 ## Troubleshooting
 
@@ -129,7 +130,7 @@ After building, run the application:
 - Re-add shortcuts if needed: `shortcuts add [app] [shortcut]`.
 
 **System stats display:**
-- Currently optimized for Windows systems.
+- Currently optimized for Windows systems with slight linux support.
 - Cross-platform support coming soon.
 
 ## Sample GIF
@@ -217,5 +218,5 @@ If TermiFlow has positively impacted your workflow, consider:
 ## Author & Version
 
 - **Author:** tecnolgd  
-- **Version:** v0.1.0-beta  
+- **Version:** v0.1.1-beta  
 - **License:** [MIT License](LICENSE.md)
