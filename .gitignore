@@ -7,6 +7,7 @@
 *.log
 *.o
 *build/
+*config/
 *.txt
 *.dll
 *.vscode/
