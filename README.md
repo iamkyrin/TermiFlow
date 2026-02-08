@@ -44,7 +44,7 @@ It’s designed for:
 ### Command Handler
 - Central command parser and dispatcher
 - Routes user input to appropriate modules
-- Gracefully handles unknown commands
+- Neatly handles unknown commands
 
 ### Application Launcher
 - Launches system applications **directly** from the terminal
@@ -219,5 +219,6 @@ If TermiFlow has positively impacted your workflow, consider:
 - **Author:** tecnolgd  
 - **Version:** v0.1.1-beta  
 - **License:** [MIT License](LICENSE.md)
+
 
 
