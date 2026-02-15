@@ -77,8 +77,9 @@ It’s designed for:
 ## Installation
 
 ### Prerequisites
-- Linux/Windows OS with g++ compiler
+- Linux/Windows OS with g++ compiler (and MinGW for Windows cross-compilation)
 - Basic terminal/command-line knowledge
+- `make` utility installed
 
 ### Build Instructions
 
@@ -86,6 +87,29 @@ It’s designed for:
 git clone https://github.com/tecnolgd/termiflow.git
 cd termiflow
 ```
+
+#### Using Makefile (Recommended)
+
+**For Linux:**
+```bash
+make build        # or simply: make
+make run          # Build and run immediately
+make rebuild      # Clean and rebuild
+```
+
+**For Windows (requires MinGW):**
+```bash
+make windows
+```
+
+**Other useful targets:**
+```bash
+make help         # Show all available targets
+make clean        # Remove build artifacts
+make info         # Display build information
+```
+
+#### Manual Build (Without Makefile)
 
 **On Linux:**
 ```bash
