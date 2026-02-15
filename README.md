@@ -1,8 +1,7 @@
 ![MIT License](https://img.shields.io/github/license/tecnolgd/TermiFlow?style=flat)
-![Static Badge](https://img.shields.io/badge/opensource-lightblue)
 ![Static Badge](https://img.shields.io/badge/interface-CLI-white)
 ![Static Badge](https://img.shields.io/badge/made_with-C++-teal)
-![Static Badge](https://img.shields.io/badge/release-v0.1.0-beta)
+![Static Badge](https://img.shields.io/badge/release-v0.1.1-beta)
 
 # TermiFlow
 ![TermiFlow logo](assets/termiflow_logo.png)
@@ -45,7 +44,7 @@ It’s designed for:
 ### Command Handler
 - Central command parser and dispatcher
 - Routes user input to appropriate modules
-- Gracefully handles unknown commands
+- Neatly handles unknown commands
 
 ### Application Launcher
 - Launches system applications **directly** from the terminal
@@ -220,3 +219,6 @@ If TermiFlow has positively impacted your workflow, consider:
 - **Author:** tecnolgd  
 - **Version:** v0.1.1-beta  
 - **License:** [MIT License](LICENSE.md)
+
+
+
