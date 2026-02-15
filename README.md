@@ -180,46 +180,6 @@ For more details, refer to:
 - **Config Management** for tool customisation   
 - **More** themes and customization options
 
-## Project Structure
-
-```txt
-termiFlow/
-├── src/
-│   ├── main.cpp
-│   ├── core/
-│   │    ├── command_handler.cpp
-│   │    ├── theme_manager.cpp
-│   │    ├── system_stats.cpp
-│   │    ├── config_loader.cpp 
-│   │    ├── task_manager.cpp
-│   ├── features/
-│        ├── launch.cpp
-│        ├── shortcuts.cpp
-│        ├── history.cpp
-│        ├── session_manager.cpp
-├── include/
-│   ├── command_handler.hpp
-│   ├── launch.hpp
-│   ├── shortcuts.hpp
-│   ├── history.hpp
-│   ├── theme_manager.hpp
-│   ├── system_stats.hpp
-│   ├── session_manager.hpp
-│   ├── config_loader.hpp
-│   ├── task_manager.hpp
-├── assets/
-│   ├── docs/
-│   │   ├── architecture.md
-│   │   ├── command_reference.md
-│   │   ├── roadmap.md
-│   ├── banner.txt 
-│   |── termiflow.GIF
-│── config/
-│   ├── termiflow.conf       
-├── README.md
-├── .gitignore
-└── build/
-```
 
 ## Contributing
 
