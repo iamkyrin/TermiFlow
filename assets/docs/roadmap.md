@@ -3,7 +3,8 @@
 
 - ✅ **Current:** 
   - C++ core with modular architecture    
-  - Currently Windows-optimized. Linux/macOS support coming soon."
+  - Currently Windows-optimized. Linux/macOS support coming soon.
+  - Makefile added for modular build and run.
 - 🔄 **In Progress:** 
   - Implemetation of new functionalities
 - 📋 **Planned:**
