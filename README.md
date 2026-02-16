@@ -1,10 +1,10 @@
+
+![TermiFlow logo](assets/termiflow_logo.png)
+
 ![MIT License](https://img.shields.io/github/license/tecnolgd/TermiFlow?style=flat)
 ![Static Badge](https://img.shields.io/badge/interface-CLI-white)
 ![Static Badge](https://img.shields.io/badge/made_with-C++-teal)
 ![Static Badge](https://img.shields.io/badge/release-v0.1.1-beta)
-
-# TermiFlow
-![TermiFlow logo](assets/termiflow_logo.png)
 
 > **A modular, extensible terminal productivity tool written in C++**  
 > Built to reduce friction between intent and execution.
