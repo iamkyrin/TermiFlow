@@ -6,12 +6,10 @@
 ![Static Badge](https://img.shields.io/badge/made_with-C++-teal)
 ![Static Badge](https://img.shields.io/badge/release-v0.1.1-beta)
 
-> **A modular, extensible terminal productivity tool written in C++**  
-> Built to reduce friction between intent and execution.
 
 ## What is TermiFlow?
 
-**TermiFlow** is a command-driven terminal tool that lets users **launch applications, execute shortcuts, track command history**, and **much more** — all from a single, fast, keyboard-centric interface.
+> **TermiFlow** is a command-driven terminal tool that lets users **launch applications, execute shortcuts, track command history**, and **much more** — all from a single, fast, keyboard-centric interface.
 
 Think of it as:
 - a ***minimal launcher***
