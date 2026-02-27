@@ -30,47 +30,7 @@ It’s designed for:
 - power users
 - anyone who prefers speed over clicks
 
-## Core Design Philosophy
 
-- **Modular architecture** – each feature lives in its own module  
-- **C++ first** – performance, control, and systems-level understanding  
-- **Extensible by design** – new commands can be added without rewriting core logic  
-- **Terminal-native** – works where developers already live
-
-## Features Implemented (Current)
-
-### Command Handler
-- Central command parser and dispatcher
-- Routes user input to appropriate modules
-- Neatly handles unknown commands
-
-### Application Launcher
-- Launches system applications **directly** from the terminal
-- **Platform-aware** execution logic (Windows/Linux)
-
-### Custom Shortcuts
-- Users can define their **own** shortcuts  
-  Example:
-  ```bash
-  shortcuts add  chrome c
-  ```
-
-### Terminal theme management
-- Provides *light* and *dark* theme for terminals
-- Switch themes with a single command
-
-### Command history 
-- Stores every command typed in command-line mode.
-- Displays commands up to the most recent command.
-
-### System stats view
-- Displays system stats like **CPU usage(N/A)**, **Memory usage** and **Uptime**
-- Currently works for windows systems.
-
-## How it works?
-- TermiFlow is built around a **modular C++** core.    
-- Each feature (launching, shortcuts, history, etc.) is implemented as a separate module, making it easy to extend and maintain.    
-- The command handler parses user input and dispatches it to the appropriate module. Command history and themes are managed via simple text files.
 
 ## Installation
 
@@ -138,6 +98,42 @@ After building, run the application:
 | **Command History** | Display previous commands | ✅ Implemented |
 | **System Stats** | Display CPU, Memory, Uptime info | ✅ Implemented (Windows & linux) |
 | **Configuration** | Auto-launch previously used theme as default theme | ✅ Implemented |
+
+
+## Features Implemented (Current)
+
+### Command Handler
+- Central command parser and dispatcher
+- Routes user input to appropriate modules
+- Neatly handles unknown commands
+
+### Application Launcher
+- Launches system applications **directly** from the terminal
+- **Platform-aware** execution logic (Windows/Linux)
+
+### Custom Shortcuts
+- Users can define their **own** shortcuts  
+  Example:
+  ```bash
+  shortcuts add  chrome c
+  ```
+
+### Terminal theme management
+- Provides *light* and *dark* theme for terminals
+- Switch themes with a single command
+
+### Command history 
+- Stores every command typed in command-line mode.
+- Displays commands up to the most recent command.
+
+### System stats view
+- Displays system stats like **CPU usage(N/A)**, **Memory usage** and **Uptime**
+- Currently works for windows systems.
+
+## How it works?
+- TermiFlow is built around a **modular C++** core.    
+- Each feature (launching, shortcuts, history, etc.) is implemented as a separate module, making it easy to extend and maintain.    
+- The command handler parses user input and dispatches it to the appropriate module. Command history and themes are managed via simple text files.
 
 ## Troubleshooting
 
