@@ -13,6 +13,7 @@
   - Enhanced system stats (CPU, network, etc.)
   - Scripting and automation features
   - Additional themes and customization options
-  - Detailed documentation website
+  - Architecture breakdown
+  - Benchmarks and test cases
   - Performance optimizations
   - cmake for efficient tool build and run
