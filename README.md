@@ -30,9 +30,7 @@ It’s designed for:
 - power users
 - anyone who prefers speed over clicks
 
-
-
-## Installation
+## Quick Run
 
 ### Prerequisites
 - Linux/Windows OS with g++ compiler (and MinGW for Windows cross-compilation)
@@ -87,6 +85,7 @@ After building, run the application:
 
 ./termiflow.exe   # for Windows
 ```
+
 ## Features Overview
 
 | Feature | Description | Status |
