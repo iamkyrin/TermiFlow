@@ -60,6 +60,8 @@ void launchApp(std::string appName) {
         std::cout << "Unknown app: " << appName << "\n";
         return;
     }
+    std::cout << "Launching " << appName << "...\n";
+    system(command.c_str());
 #endif
     
 }
