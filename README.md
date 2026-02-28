@@ -81,9 +81,9 @@ x86_64-w64-mingw32-g++ src/main.cpp src/core/*.cpp src/features/*.cpp -o termifl
 After building, run the application:
 
 ```bash
-./termiflow    # for Linux
+./build/termiflow    # for Linux
 
-./termiflow.exe   # for Windows
+./build/termiflow.exe   # for Windows
 ```
 
 ## Features Overview
