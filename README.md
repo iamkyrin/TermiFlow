@@ -6,7 +6,6 @@
 ![Static Badge](https://img.shields.io/badge/made_with-C++-teal)
 ![Static Badge](https://img.shields.io/badge/release-v0.1.1-beta)
 
-
 ## What is TermiFlow?
 
 > **TermiFlow** is a command-driven terminal tool that lets users **launch applications, execute shortcuts, track command history**, and **much more** — all from a single, fast, keyboard-centric interface.
@@ -38,7 +37,6 @@ It’s designed for:
 - `make` utility installed
 
 ### Build Instructions
-
 ```bash
 git clone https://github.com/tecnolgd/termiflow.git
 cd termiflow
@@ -154,13 +152,13 @@ After building, run the application:
 
 ## Documentation
 
+- [**Architecture**](assets/docs/architecture.md)
 - [**Commands Reference**](assets/docs/command_reference.md)
 - [**Roadmap**](assets/docs/roadmap.md)
 
 For more details, refer to:
 - **Code comments** in source files for implementation details
 - **Header files** in `include/` directory for function details
-
 
 ## License
 [MIT License](LICENSE.md)
@@ -172,7 +170,6 @@ For more details, refer to:
 - **Scripting** and **automation** features 
 - **Config Management** for tool customisation   
 - **More** themes and customization options
-
 
 ## Contributing
 
@@ -190,12 +187,12 @@ If TermiFlow has positively impacted your workflow, consider:
 - 💬 Sharing feedback and suggestions
 - 🤝 Contributing code or documentation
 
-
 ## Author & Version
 
 - **Author:** tecnolgd  
 - **Version:** v0.1.1-beta  
 - **License:** [MIT License](LICENSE.md)
+
 
 
 
