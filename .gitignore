@@ -8,7 +8,7 @@
 *.o
 config/
 build/
-*.txt
+assets/textfiles/
 *.dll
 .vscode/
 termiflow
