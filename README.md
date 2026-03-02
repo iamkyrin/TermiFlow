@@ -32,7 +32,7 @@ It’s designed for:
 ## Quick Run
 
 ### Prerequisites
-- Linux/Windows OS with g++ compiler (and MinGW for Windows cross-compilation)
+- Linux/Windows OS with g++ (used version 13.0.0) compiler (and MinGW for Windows cross-compilation)
 - Basic terminal/command-line knowledge
 - `make` utility installed
 
@@ -144,7 +144,7 @@ After building, run the application:
 - Re-add shortcuts if needed: `shortcuts add [app] [shortcut]`.
 
 **System stats display:**
-- Currently optimized for Windows systems with slight linux support.
+- Currently optimized for Windows systems with slight linux support(unstable).
 - Cross-platform support coming soon.
 
 ## Sample GIF
