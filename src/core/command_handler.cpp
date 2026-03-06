@@ -23,6 +23,7 @@ void cmdHandler() {
         std::stringstream ss(input); // need explanation!! 
         std::vector<std::string> tokens; //vector to store all seperate words of the input string
         std::string token; //token: single word in the input string
+
         while (ss >> token) { //needs explanation !
             tokens.push_back(token);
         }
@@ -61,7 +62,8 @@ void cmdHandler() {
                 }else {
                     std::cout << "Invalid shortcut command! Check 'help'\n";
                 }
-            } else {
+            } 
+            else {
                 std::cout << "Usage: shortcut <add/remove/list>  <shortcut>" << std::endl;
             }
         }
