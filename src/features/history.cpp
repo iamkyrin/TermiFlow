@@ -7,7 +7,7 @@
 //go through and understand all of these functions and what they do. write comments once its clear to follow through.
 void history::load() {
     cmdEntries.clear();
-    std::ifstream infile("history.txt");
+    std::ifstream infile("assets/textfiles/history.txt");
     if(!infile.is_open()){
         return;
     }
