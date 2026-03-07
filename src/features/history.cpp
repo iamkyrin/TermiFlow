@@ -20,7 +20,7 @@ void history::load() {
 }
 
 void history::save() {
-    std::ofstream outfile("history.txt");
+    std::ofstream outfile("assets/textfiles/history.txt");
     for(auto& e : cmdEntries) { //for each loop
         outfile << e << "\n";
     }
