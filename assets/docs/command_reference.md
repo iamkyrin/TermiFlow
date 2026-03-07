@@ -1,4 +1,5 @@
 <!--command_reference.md-->
+
 ### Starting TermiFlow
 Once launched, TermiFlow operates in a command-driven terminal mode where you can:
 
@@ -40,4 +41,3 @@ View system information:
 ```bash
 stats                          # Display CPU (N/A), Memory, Uptime (Windows-focused)
 ``` 
-
