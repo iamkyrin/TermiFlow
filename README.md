@@ -90,7 +90,7 @@ After building, run the application:
 |---------|-------------|--------|
 | **Command Handler** | Central command parser and dispatcher | ✅ Implemented |
 | **Application Launcher** | Launch system applications directly | ✅ Implemented |
-| **Custom Shortcuts** | Define your own command shortcuts | ✅ Implemented |
+| **Custom Shortcuts** | Define your own app launch shortcuts | ✅ Implemented (Currently for Windows apps) |
 | **Theme Manager** | Light/Dark terminal themes | ✅ Implemented |
 | **Command History** | Display previous commands | ✅ Implemented |
 | **System Stats** | Display CPU, Memory, Uptime info | ✅ Implemented (Windows & linux) |
@@ -114,6 +114,7 @@ After building, run the application:
   ```bash
   shortcuts add  chrome c
   ```
+- (Note: Shortcuts are currently defined for Windows systems; Linux support comming soon!)
 
 ### Terminal theme management
 - Provides *light* and *dark* theme for terminals
