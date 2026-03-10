@@ -30,15 +30,17 @@ int main() {
     char choice='0';
     std::string buffer;
 
-    while (true) {
-        Config config = loadConfig("config/termiflow.conf");
+    Config config = loadConfig("config/termiflow.conf");
 
         if (config.values["behavior.auto_apply_theme"] == "true") {
             changeTheme(config.values["user_interface.theme"]);
         }
-
+    while (true){
         showMenu(); //display menu
+
         do{
+           
+
             if(!isdigit(choice)){ //works only when the input is not a digit
                 std::cout<<"Error!. Invalid choice format. (Use digits from 0->9)\n";
             }
