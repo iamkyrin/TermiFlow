@@ -17,11 +17,9 @@ void changeTheme(std::string theme){ //for command handler mode
             std::cout<<"Invalid theme !\n";
     #else
         if(theme=="light"){
-            system("clear");
             std::cout << "\033[47;30m"; // white background with black text
         }
         else if(theme=="dark"){
-            system("clear");
             std::cout << "\033[40;37m"; // black background with white text / default theme
         }
         else
