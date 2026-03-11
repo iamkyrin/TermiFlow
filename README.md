@@ -32,13 +32,15 @@ It’s designed for:
 ## Quick Run
 
 ### Prerequisites
-- Linux/Windows OS with g++ (used version 13.0.0) compiler (and MinGW for Windows cross-compilation)
+- Linux/Windows OS with g++ (used version 13.0.0) compiler (with MinGW for Windows cross-compilation)
 - Basic terminal/command-line knowledge
 - `make` utility installed
 
 ### Build Instructions
 ```bash
 git clone https://github.com/tecnolgd/termiflow.git
+```
+```bash
 cd termiflow
 ```
 
