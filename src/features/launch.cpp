@@ -65,4 +65,3 @@ void launchApp(std::string appName) {
 #endif
     
 }
-
