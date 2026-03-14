@@ -17,6 +17,10 @@ Think of it as:
 
 *No GUI. No fluff. Just flow.*
 
+## Sample GIF
+![Termiflow GIF](assets/termiflow.GIF)
+
+
 ## Why TermiFlow?
 
 Modern systems are powerful but fragmented.  
@@ -150,9 +154,6 @@ After building, run the application:
 - Currently optimized for Windows systems with slight linux support(unstable).
 - Cross-platform support coming soon.
 
-## Sample GIF
-![Termiflow GIF](assets/termiflow.GIF)
-
 ## Documentation
 
 - [**Architecture**](assets/docs/architecture.md)
@@ -174,21 +175,15 @@ For more details, refer to:
 - **Config Management** for tool customisation   
 - **More** themes and customization options
 
-## Contributing
-
-Contributions are welcome! Help make TermiFlow better by:
-- Reporting bugs
-- Suggesting features
-- Submitting pull requests
-- Improving documentation
+## [Contributing](CONTRIBUTING.md)
 
 ## Support This Project
 
 If TermiFlow has positively impacted your workflow, consider:
-- ⭐ Starring this repository
-- 🍴 Forking the project
-- 💬 Sharing feedback and suggestions
-- 🤝 Contributing code or documentation
+- Starring this repository
+- Forking the project
+- Sharing feedback and suggestions
+- [Contributing](CONTRIBUTING.md) code or documentation
 
 ## Author & Version
 
