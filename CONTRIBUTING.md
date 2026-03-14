@@ -5,7 +5,7 @@ Thank you for your interest in contributing to TermiFlow! We aim to build a high
  Whether you’re fixing a bug, adding a new system metric, or optimizing data structures used , your help is welcome.
 
 ### Development Setup
-To set up your local development environment and build the project, please follow the Installation Instructions in the [README.md](README.md).
+To set up your local development environment and build the project, please follow the Installation Instructions in the [README.md](README.md#build-instructions).
 
 *Additional Dev Note: Ensure you have `g++` or `make` installed, as our build process relies on standard GNU tools*.
 
