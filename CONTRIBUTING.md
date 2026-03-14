@@ -35,4 +35,4 @@ or consider **user-defined** ideas to make Termiflow better. Some easy wins:
 - Code refractoring
 - Terminal UI improvement
 - Documentation(like architecture or commands reference)
-- Testcases creation/ benchmarking
+- Submitting issues or engaging in discussions
