@@ -8,7 +8,8 @@
   -  Detailed Architecture breakdown and tool info in `assets/docs/architecture.md`
 
 - 🔄 **In Progress:** 
-  - Implemetation of new functionalities
+  - Implemetation of Arch. diagrams and docs 
+
 - 📋 **Planned:**
   - Cross-platform support (Linux, macOS)
   - Plugin system for third-party modules
