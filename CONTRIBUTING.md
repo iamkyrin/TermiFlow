@@ -29,10 +29,6 @@ To set up your local development environment and build the project, please follo
 ### Current Priorities
 
 Looking for a place to start?
-Check the [ROADMAP](assets/docs/roadmap.md) for planned ideas
-    
-or consider **user-defined** ideas to make Termiflow better. Some easy wins: 
-- Code refractoring
-- Terminal UI improvement
-- Documentation(like architecture or commands reference)
-- Submitting issues or engaging in discussions
+Check     
+- [Roadmap](assets/docs/roadmap.md) for planned ideas
+- [Current Limitations](assets/docs/architecture.md#current-limitations--architectural-issues) and contibute solutions
