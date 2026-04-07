@@ -31,4 +31,4 @@ To set up your local development environment and build the project, please follo
 Looking for a place to start?
 Check     
 - [Roadmap](assets/docs/roadmap.md) for planned ideas
-- [Current Limitations](assets/docs/architecture.md#current-limitations--architectural-issues) and contibute solutions
+- [Current Limitations](assets/docs/architecture.md#current-limitations--architectural-issues) to start solving them and contribute
