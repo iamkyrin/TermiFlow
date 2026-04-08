@@ -31,4 +31,4 @@ To set up your local development environment and build the project, please follo
 Looking for a place to start?
 Check     
 - [Roadmap](assets/docs/roadmap.md) for planned ideas
-- [Current Limitations](assets/docs/architecture.md#current-limitations--architectural-issues) to start solving them and contribute
+- [Open Issues](https://github.com/tecnolgd/TermiFlow/issues) to find bugs and features you can contribute to
