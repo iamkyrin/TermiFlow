@@ -76,11 +76,6 @@ struct Config {
 - `user_interface.theme` - Current theme (light/dark)
 - `behavior.auto_apply_theme` - Auto-apply theme on startup
 
-**Limitations:**
-- No validation of config values
-- No error handling for missing files
-- No type system (all values are strings)
-
 
 #### B. **Theme Manager** (theme_manager.hpp/cpp)
 
@@ -95,11 +90,6 @@ struct Config {
 
 **Implementation:** Uses ANSI escape sequences or platform-specific system calls
 
-**Limitations:**
-- Limited theme selection
-- No custom theme support
-- Theme changes are terminal-session only (not persistent across new terminals)
-
 
 #### C. **Command Handler** (command_handler.hpp/cpp)
 
@@ -109,10 +99,6 @@ struct Config {
 - `cmdHandler()` - Interactive command input and execution
 
 **Scope:** Development-phase module (specific use case not finalized)
-
-**Limitations:**
-- Basic implementation
-- Limited command set
 
 
 ### 3. **Feature Modules**
@@ -133,12 +119,6 @@ struct Config {
 **Platform Support:**
 - Linux: Uses `execvp()` or similar
 - Windows: Uses `CreateProcess()` or `system()` call
-
-**Limitations:**
-- Application list is hardcoded or application discovery is basic
-- No error handling for missing applications
-- No process tracking
-- Blocking calls (application takeover)
 
 
 #### B. **Shortcuts** (shortcuts.hpp/cpp)
@@ -185,13 +165,6 @@ Modify in-memory map
 save() to file
 ```
 
-**Limitations:**
-- Windows-only (shortcuts for Windows apps, mentioned in README)
-- No conflict detection
-- Single thread, blocking I/O
-- Unknown file format makes recovery difficult
-- No undo functionality
-
 
 #### C. **History** (history.hpp/cpp)
 
@@ -219,24 +192,12 @@ class history {
 - Add/list/clear operations
 - Interactive mode (`historyInteractive()`)
 
-**Limitations:**
-- No timestamp tracking
-- No categorization (all commands mixed)
-- No search/filter functionality
-- Unbounded growth (no cleanup policy)
-- No command execution from history
-
 
 #### D. **Session Manager** (session_manager.hpp/cpp)
 
 **Purpose:** Manage sessions and running tasks
 
 **Status:** Not fully implemented (marked N/A in main.cpp)
-
-**Limitations:**
-- Current state is placeholder
-- No process tracking
-- No session persistence
 
 
 #### E. **System Stats** (system_stats.hpp/cpp)
@@ -247,11 +208,6 @@ class history {
 - `statsInteractive()` - Display system statistics
 
 **Status:** Partially implemented (marked "Partially N/A" in README)
-
-**Limitations:**
-- Limited metrics available
-- No real-time monitoring
-- Basic implementation
 
 
 ## Data Flow Diagrams
@@ -307,95 +263,10 @@ Apply theme to current terminal
 saveThemeToConfig() persists preference
 ```
 
-## Current Limitations & Architectural Issues
+## Known Issues & Improvements
 
-### **Critical Limitations**
-
-#### 1. **No Dependency Injection or Configuration**
-- Configuration is global and hardcoded file paths
-- No way to change data directories
-- Testing is difficult due to tight coupling
-
-#### 2. **File-Based Storage Without Proper Format**
-- Shortcuts and history use unknown file formats
-- No schema versioning
-- No migration path for future format changes
-- Data corruption risk without validation
-
-#### 3. **Single-Threaded, Blocking Architecture**
-- Menu loop blocks on user input
-- Application launches block entire program
-- History/shortcuts I/O is synchronous
-- No concurrent task execution
-
-#### 4. **No Error Handling**
-- Missing try-catch blocks
-- File I/O errors are silently ignored or cause crashes
-- Invalid user input not fully validated
-- No error recovery mechanisms
-
-#### 5. **Platform-Specific Code Not Well Abstracted**
-- Windows-specific paths and APIs mixed with Linux
-- No abstraction layer for platform differences
-- Difficult to maintain cross-platform compatibility
-- Windows app shortcuts hardcoded in features
-
-#### 6. **Limited Scalability**
-- All shortcuts and history loaded into memory
-- No pagination or lazy loading
-- Linear search through data structures
-- Performance degrades with large datasets
-
-### **Architectural Limitations**
-
-#### 7. **Tight Coupling Between Components**
-- Menu dispatcher directly calls feature handlers
-- No event system or plugin architecture
-- Features have direct dependencies on config
-- Difficult to add new features without modifying main.cpp
-
-#### 8. **No Logging or Debugging Infrastructure**
-- No centralized logging system
-- No debug mode
-- No execution tracing
-- Difficult to diagnose production issues
-
-#### 9. **Incomplete Features**
-- Session Manager: Not implemented (N/A)
-- Task Manager: Not implemented (N/A)
-- Config Loader editing: Commented out (N/A)
-- System Stats: Partially implemented
-
-#### 10. **No Separation of Concerns**
-- File I/O mixed with business logic
-- Menu UI logic in main.cpp dispatcher
-- No clear data layer or model layer
-- Interactive mode functions duplicate logic
-
-### **Code Quality Limitations**
-
-#### 11. **Header Guard Inconsistencies**
-- Some use pragma once, some use ifndef
-- No standard naming convention
-- Missing include guards in some files
-
-#### 12. **Memory Management Concerns**
-- No use of smart pointers
-- Potential memory leaks in class destructors
-- No RAII patterns
-- Manual resource management prone to errors
-
-#### 13. **No Unit Testing Infrastructure**
-- No test framework integration
-- No test directory structure
-- No mocking capabilities
-- Very difficult to unit test components
-
-#### 14. **Build System Limitations**
-- Makefile is basic (no dependency tracking)
-- Hard-coded source file lists
-- No incremental build support
-- Recompiles all files even for single changes
+For a comprehensive list of known limitations, ongoing issues, and opportunities to contribute, please refer to the [GitHub Issues](https://github.com/YOUR_USERNAME/termiflow/issues) tab.    
+Each issue is categorized and tracked for priority and difficulty level.
 
 
 
