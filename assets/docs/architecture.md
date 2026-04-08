@@ -265,7 +265,7 @@ saveThemeToConfig() persists preference
 
 ## Known Issues & Improvements
 
-For a comprehensive list of known limitations, ongoing issues, and opportunities to contribute, please refer to the [GitHub Issues](https://github.com/YOUR_USERNAME/termiflow/issues) tab.    
+For a comprehensive list of known limitations, ongoing issues, and opportunities to contribute, please refer to the [GitHub Issues](https://github.com/tecnolgd/TermiFlow/issues) tab.    
 Each issue is categorized and tracked for priority and difficulty level.
 
 
