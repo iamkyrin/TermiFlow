@@ -268,8 +268,6 @@ saveThemeToConfig() persists preference
 For a comprehensive list of known limitations, ongoing issues, and opportunities to contribute, please refer to the [GitHub Issues](https://github.com/tecnolgd/TermiFlow/issues) tab.    
 Each issue is categorized and tracked for priority and difficulty level.
 
-
-
 ## Conclusion
 
 TermiFlow is a **modular, feature-rich terminal launcher** with a solid foundation for basic use cases. The architecture is straightforward and easy to understand, making it accessible for contributors. However, the project would benefit significantly from improved error handling, proper separation of concerns, automated testing, and a clearer abstraction layer for platform differences.
