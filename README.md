@@ -1,10 +1,13 @@
 
 ![TermiFlow logo](assets/termiflow_logo.png)
 
-![MIT License](https://img.shields.io/github/license/tecnolgd/TermiFlow?style=flat)
-![Static Badge](https://img.shields.io/badge/interface-CLI-white)
-![Static Badge](https://img.shields.io/badge/made_with-C++-teal)
-![Static Badge](https://img.shields.io/badge/release-v0.1.1-beta)
+<div align = "center">
+
+<a href = "LICENSE.md"><img src = "https://img.shields.io/github/license/tecnolgd/TermiFlow?style=flat" alt = "License(MIT)"></a>
+<a href = "https://github.com/tecnolgd/TermiFlow/issues"><img src = "https://img.shields.io/badge/issues-open-teal"></a>
+<a href = "https://github.com/tecnolgd/TermiFlow/releases"><img src = "https://img.shields.io/badge/release-v0.1.1-beta" alt = "Release"></a>
+<a href = "#documentation"><img src = "https://img.shields.io/badge/docs-available-blue" alt = "Docs"></a>
+</div>
 
 ## What is TermiFlow?
 
