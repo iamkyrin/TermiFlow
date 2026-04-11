@@ -53,7 +53,6 @@ Dispatch to Feature Handler
 Return to Menu
 ```
 
-
 ### 2. **Core Modules**
 
 #### A. **Config Loader** (config_loader.hpp/cpp)
@@ -76,7 +75,6 @@ struct Config {
 - `user_interface.theme` - Current theme (light/dark)
 - `behavior.auto_apply_theme` - Auto-apply theme on startup
 
-
 #### B. **Theme Manager** (theme_manager.hpp/cpp)
 
 **Purpose:** Manage terminal color themes
@@ -89,7 +87,6 @@ struct Config {
 **Supported Themes:** Light, Dark (platform-dependent ANSI codes)
 
 **Implementation:** Uses ANSI escape sequences or platform-specific system calls
-
 
 #### C. **Command Handler** (command_handler.hpp/cpp)
 
@@ -119,7 +116,6 @@ struct Config {
 **Platform Support:**
 - Linux: Uses `execvp()` or similar
 - Windows: Uses `CreateProcess()` or `system()` call
-
 
 #### B. **Shortcuts** (shortcuts.hpp/cpp)
 
@@ -165,7 +161,6 @@ Modify in-memory map
 save() to file
 ```
 
-
 #### C. **History** (history.hpp/cpp)
 
 **Purpose:** Track and display command history
@@ -192,13 +187,11 @@ class history {
 - Add/list/clear operations
 - Interactive mode (`historyInteractive()`)
 
-
 #### D. **Session Manager** (session_manager.hpp/cpp)
 
 **Purpose:** Manage sessions and running tasks
 
 **Status:** Not fully implemented (marked N/A in main.cpp)
-
 
 #### E. **System Stats** (system_stats.hpp/cpp)
 
