@@ -15,21 +15,32 @@ void shortcuts::add(){
     std::cout<<"\t-- Available apps for launch --\n";
     std::cout<<"1: chrome\t2. code\t3: notepad\t4: youtube\n";
     std::cout<<"Select the app to create shortcut for(choose 1/2/3): ";
-    std::cin>>appChoice;
-    std::cin.ignore(); // Clear the input buffer
-    std::cout<<"Create a custom shortcut: ";
-    std::getline(std::cin, appShortcut);  //shortcut key e.g., 'ch' for chrome
-    switch(appChoice){
-        case 1: add(appShortcut, "chrome");
-                break;
-        case 2: add(appShortcut, "code");
-                break;
-        case 3: add(appShortcut, "notepad");
-                break;
-        case 4: add(appShortcut, "youtube");
-                break;
-        default: std::cout<<"Invalid!. The app you want seems to be missing.\n";
+    while (!(std::cin >> appChoice)){
+        std::cin.clear();
+        std::cin.ignore(1000, '\n');
+        std::cout << "Invalid input. Please enter a number: ";
     }
+    std::cin.ignore();
+    std::cout << "Create a custom shortcut: ";
+    std::getline(std::cin, appShortcut);
+
+    try{
+        switch(appChoice){
+            case 1: add(appShortcut, "chrome");
+                    break;
+            case 2: add(appShortcut, "code");
+                    break;
+            case 3: add(appShortcut, "notepad");
+                    break;
+            case 4: add(appShortcut, "youtube");
+                    break;
+            default: std::cout<<"Invalid!. The app you want seems to be missing.\n";
+        }
+    } catch (const std::exception& e){
+        std::cerr << e.what() << "\n";
+        return;
+    }
+
 }
 
 void shortcuts::remove(){
