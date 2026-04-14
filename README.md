@@ -1,7 +1,7 @@
 
-![TermiFlow logo](assets/termiflow_logo.png)
-
 <div align = "center">
+
+<img src = "assets/termiflow_logo.png" alt = "TermiFlow logo">
 
 <a href = "LICENSE.md"><img src = "https://img.shields.io/github/license/tecnolgd/TermiFlow?style=flat" alt = "License(MIT)"></a>
 <a href = "https://github.com/tecnolgd/TermiFlow/issues"><img src = "https://img.shields.io/badge/issues-open-teal"></a>
