@@ -6,6 +6,9 @@
 <a href = "LICENSE.md"><img src = "https://img.shields.io/github/license/tecnolgd/TermiFlow?style=flat" alt = "License(MIT)"></a>
 <a href = "https://github.com/tecnolgd/TermiFlow/issues"><img src = "https://img.shields.io/badge/issues-open-teal"></a>
 <a href = "https://github.com/tecnolgd/TermiFlow/releases"><img src = "https://img.shields.io/badge/release-v0.1.1-beta" alt = "Release"></a>
+<a href="https://github.com/tecnolgd/TermiFlow/graphs/contributors">
+  <img src="https://img.shields.io/github/contributors/tecnolgd/TermiFlow?style=flat&color=orange" alt="Contributors Badge">
+</a>
 <a href = "#documentation"><img src = "https://img.shields.io/badge/docs-available-blue" alt = "Docs"></a>
 </div>
 
@@ -180,6 +183,10 @@ For more details, refer to:
 - **More** themes and customization options
 
 ## [Contributing](CONTRIBUTING.md)
+
+## Contributors
+A huge thanks to the developers contributing to TermiFlow.
+- [@iamkyrin](https://github.com/iamkyrin)
 
 ## Support This Project
 
