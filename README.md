@@ -62,6 +62,7 @@ make rebuild      # Clean and rebuild
 
 **For Windows (requires MinGW):**
 ```bash
+mkdir build
 make windows
 ```
 

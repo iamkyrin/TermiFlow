@@ -27,7 +27,8 @@ void showMenu() {
 }
 
 int main() {
-    char choice='0';
+    std::string choiceStr;
+    char choice;
     std::string buffer;
 
     Config config = loadConfig("config/termiflow.conf");
@@ -35,19 +36,22 @@ int main() {
         if (config.values["behavior.auto_apply_theme"] == "true") {
             changeTheme(config.values["user_interface.theme"]);
         }
+    try{
     while (true){
         showMenu(); //display menu
 
         do{
-           
-
-            if(!isdigit(choice)){ //works only when the input is not a digit
-                std::cout<<"Error!. Invalid choice format. (Use digits from 0->9)\n";
-            }
             std::cout<<"Enter your choice: ";
-            std::cin>> choice;
-        }
-        while(!isdigit(choice));//loops if the input is not a digit
+            std::cin>> choiceStr;
+            if(choiceStr.length() == 1 && isdigit(choiceStr[0])){
+                choice = choiceStr[0];
+            }else{
+                std::cout<<"Error!. Invalid choice format. (Use digits from 0->9)\n";
+                choice = ' ';
+            }
+
+        }while(!isdigit(choice));//loops if the input is not a digit
+
         std::getline(std::cin, buffer);
 
         switch (choice) {
@@ -85,5 +89,10 @@ int main() {
                 std::cout << "Invalid option!. Try again.\n";
         }
     }
+    } catch (const std::exception& e) {
+        std::cerr << e.what() << "\n";
+        return 0;
+    }
+
     return 0;
 }
